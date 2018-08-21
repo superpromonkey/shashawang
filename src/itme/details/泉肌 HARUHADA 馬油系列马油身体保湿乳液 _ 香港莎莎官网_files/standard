@@ -1,0 +1,1 @@
+mboxFactories.get('default').get('productPage',0).setOffer(new mboxOfferDefault()).loaded();

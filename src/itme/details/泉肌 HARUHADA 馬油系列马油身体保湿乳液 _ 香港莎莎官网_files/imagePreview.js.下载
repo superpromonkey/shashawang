@@ -1,0 +1,104 @@
++(function ($) {
+  define('tpl', function () {
+    var _tpl = ['<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">',
+                '  <div class="pswp__bg"></div>',
+                '  <div class="pswp__scroll-wrap">',
+                '    <div class="pswp__container">',
+                '      <div class="pswp__item"></div>',
+                '      <div class="pswp__item"></div>',
+                '      <div class="pswp__item"></div>',
+                '    </div>',
+                '    <div class="pswp__ui pswp__ui--hidden">',
+                '      <div class="pswp__top-bar">',
+                '        <div class="pswp__counter"></div>',
+                '        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>',
+                '        <button class="pswp__button pswp__button--share" title="Share"></button>',
+                '        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>',
+                '        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>',
+                '        <div class="pswp__preloader">',
+                '          <div class="pswp__preloader__icn">',
+                '            <div class="pswp__preloader__cut">',
+                '              <div class="pswp__preloader__donut"></div>',
+                '            </div>',
+                '          </div>',
+                '        </div>',
+                '      </div>',
+                '      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">',
+                '        <div class="pswp__share-tooltip"></div> ',
+                '      </div>',
+                '      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>',
+                '      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>',
+                '      <div class="pswp__caption">',
+                '        <div class="pswp__caption__center"></div>',
+                '      </div>',
+                '    </div>',
+                '  </div>',
+                '<div>'].join("");
+    return _tpl;
+  });
+
+  define(['tpl', 'photoswipe', 'photoswipe-ui' ], function (tpl, PhotoSwipe, PhotoSwipeUI_Default ) {
+    $(document.body).append(tpl);
+
+    var photoSwipeOpts = {
+          captionEl: !1,
+          fullscreenEl: !1,
+          shareEl: !1,
+          bgOpacity: .85
+        }
+
+    var _init = function (ctx, elm) {
+      if (false === $(elm).hasClass('J-commentimgs-pv')) return false;
+      var $imgs = $(ctx).find('.J-commentimgs-pv'),
+          photoSwipeArr = [],
+          _photoSwipeOpts = photoSwipeOpts,
+          _index = $imgs.index(elm);
+      _photoSwipeOpts.getThumbBoundsFn = function(e) {
+        var _y = window.pageYOffset || document.documentElement.scrollTop;
+        e = $imgs[e].getBoundingClientRect();
+        return {
+          x: e.left,
+          y: e.top + _y,
+          w: e.width
+        }
+      }
+      _photoSwipeOpts.index = _index;
+
+      $imgs.each(function(i, elm) {
+        var _url = $(elm).attr('data-originsrc');
+        photoSwipeArr.push({
+          src: _url,
+          w: 0,
+          h: 0
+        })
+      });
+
+      var gallery = new PhotoSwipe($('.pswp').get(0), PhotoSwipeUI_Default, photoSwipeArr, _photoSwipeOpts);
+
+      gallery.listen("gettingData", function(a, d) {
+        if (void 0 === d.onLoading && (1 > d.w || 1 > d.h)) {
+          d.onLoading = !0;
+          var f = new Image;
+          f.onload = function() {
+            d.w = this.width;
+            d.h = this.height;
+            gallery.invalidateCurrItems();
+            gallery.updateSize(!0);
+          }
+          f.src = d.src;
+        }
+      });
+      gallery.init();
+    }
+
+    function bind (cont) {
+      cont = cont || '.J-commentimgs-pv__cont';
+      $(document).on('click', cont, function(e) {
+        _init(this, e.srcElement || e.target);
+      });
+    }
+
+    return bind;
+  });
+
+})(window.jQuery || window.Zepto);

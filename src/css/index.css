@@ -1,7 +1,6 @@
 .indexbox {
   background-color: #F2F2F2;
   width: 100%;
-  height: 10000px;
 }
 
 .head_top {
@@ -490,14 +489,17 @@
   margin-top: 20px;
 }
 
-.main .container .cat-ex-vertical img {
+.main .container .cat-ex-vertical a {
   float: left;
-  width: 390px;
-  height: 190px;
   margin-right: 15px;
 }
 
-.main .container .cat-ex-vertical:last-child li img {
+.main .container .cat-ex-vertical a img {
+  width: 390px;
+  height: 190px;
+}
+
+.main .container .cat-ex-vertical li:last-child a {
   margin-right: 0px;
 }
 
@@ -554,13 +556,277 @@
   margin-right: 0;
 }
 
-.main .container .edayk {
+.main .container .mrbkbox .idxmainbt {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.main .container .mrbkbox .idxmainbt p {
+  font-size: 20px;
+}
+
+.main .container .mrbkbox .edayk {
   width: 100%;
 }
 
-.main .container .edayk .everyday {
-  height: 26px;
+.main .container .mrbkbox .edayk ul {
+  overflow: hidden;
+}
+
+.main .container .mrbkbox .edayk ul li {
+  float: left;
+  overflow: hidden;
+  color: #e93b78;
+  background-color: #fff;
+}
+
+.main .container .mrbkbox .edayk ul li img {
+  float: left;
+}
+
+.main .container .mrbkbox .edayk ul li .sasa_mustcheck_info {
+  float: right;
+  width: 230px;
+  height: 260px;
+  text-align: center;
+  position: relative;
+}
+
+.main .container .mrbkbox .edayk ul li .sasa_mustcheck_info .sasa_mustcheck_title {
+  margin-top: 60px;
+  font-size: 22px;
+}
+
+.main .container .mrbkbox .edayk ul li .sasa_mustcheck_info .sasa_mustcheck_subtit {
+  color: #5a5a5a;
+  font-size: 17px;
   margin-top: 10px;
-  margin-bottom: 26px;
-  background: url("../img/index/main/new_arrival.png") no-repeat;
+}
+
+.main .container .mrbkbox .edayk ul li .sasa_mustcheck_info .sasa_mustcheck_date {
+  color: #5a5a5a;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.main .container .mrbkbox .edayk ul li .sasa_mustcheck_info .sasa_mustcheck_btn {
+  display: block;
+  width: 108px;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  bottom: 50px;
+  left: 62px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #e93b78;
+  letter-spacing: 1px;
+}
+
+.main .container .mrbkbox .xsmain {
+  overflow: hidden;
+  background-color: #fff;
+  height: 360px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.main .container .mrbkbox .xsmain .xs_l {
+  float: left;
+}
+
+.main .container .mrbkbox .xsmain .xs_r {
+  float: right;
+  width: 480px;
+  height: 280px;
+  margin: 40px 40px 0 0;
+  position: relative;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xsqgtime {
+  top: -20px;
+  left: 0px;
+  color: #fff;
+  min-width: 80px;
+  height: 24px;
+  overflow: hidden;
+  padding: 0 10px;
+  text-align: center;
+  position: absolute;
+  background-color: #414141;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .syh {
+  font-size: 30px;
+  display: inline;
+  font-weight: bold;
+  color: skyblue;
+}
+
+.main .container .mrbkbox .xsmain .xs_r p {
+  width: 100%;
+  height: 120px;
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  color: #222;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_tm .yew {
+  color: #ee9c23;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_tm span {
+  width: 100%;
+  height: 20px;
+  bottom: 44px;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_price {
+  margin-top: 10px;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_price .xs_rmb {
+  font-weight: 600;
+  color: #fc3f83;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_price .xs_jg {
+  font-size: 32px;
+  line-height: 30px;
+  color: #fc3f83;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_price .xs_qiangou {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main .container .mrbkbox .xsmain .xs_r .xs_price .xs_qiangou .sasa_limit_btn {
+  float: right;
+  width: 92px;
+  height: 32px;
+  display: block;
+  float: right;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e93b78;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.main .container .mrbkbox .ckgdutm {
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.main .container .mrbkbox .ckgdutm .ckgdutm_btn {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  font-weight: 800;
+  border-radius: 24px;
+  padding: 10px;
+  background: #fc3f83 !important;
+}
+
+.main .container .mrbkbox .ph_hf {
+  width: 382px;
+  border-top: 2px solid #fc3f83;
+  background-color: #fff;
+  float: left;
+  margin-right: 27px;
+}
+
+.main .container .mrbkbox .ph_hf h2 {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  font-size: 22px;
+  color: #111;
+}
+
+.main .container .mrbkbox .ph_hf li {
+  width: 362px;
+  height: 80px;
+  padding: 10px;
+  position: relative;
+  border-top: 1px solid #eee;
+}
+
+.main .container .mrbkbox .ph_hf li .hftupian {
+  position: relative;
+  float: left;
+}
+
+.main .container .mrbkbox .ph_hf li .hftupian .ph_caitiao {
+  position: absolute;
+  width: 42px;
+  height: 41px;
+  top: -6px;
+  left: -4px;
+  background: url("../img/index/main/ranking_1.png") no-repeat;
+}
+
+.main .container .mrbkbox .ph_hf li .hftupian img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon {
+  width: 272px;
+  height: 80px;
+  float: right;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon .hfxx {
+  width: 100%;
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+  margin-top: 13px;
+  font-size: 13px;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon .hfxx .phspace {
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon .hfxx .phspace .yew {
+  color: #ee9c23;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon .hfxx .ph_jg {
+  float: left;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon .hfxx .ph_jg span {
+  color: #aaa;
+}
+
+.main .container .mrbkbox .ph_hf li .hfcon .hfxx .ph_xl {
+  float: right;
 }

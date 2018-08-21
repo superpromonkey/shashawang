@@ -174,13 +174,7 @@
   color: #ec3e7d;
 }
 
-.zhuce .container .zcnr .zcnr_r .sign-title .form-horizontal .input {
-  margin: -20px 0;
-  height: 38px;
-}
-
-.zhuce .container .zcnr .zcnr_r .sign-title .form-horizontal .yzbox #code::before {
-  width: 60px;
+.zhuce .container .zcnr .zcnr_r .sign-title .bdtx {
+  width: 200px;
   height: 36px;
-  border: 1px solid #ec3e7d;
 }
