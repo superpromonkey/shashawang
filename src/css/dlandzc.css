@@ -1,0 +1,186 @@
+.head_top {
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #F2F2F2;
+}
+
+.head_top .container {
+  height: 32px;
+  background-color: #F2F2F2;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+.head_top .container .head_tl {
+  color: #6C6C6C;
+}
+
+.head_top .container .head_tl li {
+  float: left;
+}
+
+.head_top .container .head_tl li a {
+  color: #EC3E7D;
+  text-decoration: underline;
+  padding: 0px 4px;
+}
+
+.head_top .container .head_tr {
+  line-height: 32px;
+  color: #6C6C6C;
+}
+
+.head_top .container .head_tr li {
+  float: left;
+}
+
+.head_top .container .head_tr li a {
+  color: #EC3E7D;
+  padding: 0px 4px;
+  padding: 0px 12px;
+}
+
+.head_top .container .head_tr li:hover {
+  background-color: #fff;
+}
+
+.head_top .container .head_tr .idxnavt {
+  position: relative;
+}
+
+.head_top .container .head_tr .idxnavt .myzh {
+  width: 100px;
+  display: none;
+  z-index: 10;
+  background-color: #fff;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px 10px 10px;
+}
+
+.head_top .container .head_tr .mycar {
+  position: relative;
+}
+
+.head_top .container .head_tr .mycar .mycarlist {
+  z-index: 10;
+  top: 32px;
+  left: 0px;
+  display: none;
+  position: absolute;
+  width: 302px;
+  min-height: 72px;
+  background-color: white;
+  border: 1px solid #E5E5E5;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.head_top .container .head_tr .mycar:hover .mycarlist {
+  display: block;
+}
+
+.head_top .container .head_tr .head_last {
+  padding: 0 12px;
+}
+
+.head_top .container .head_tr .head_last a {
+  padding: 0px 2px;
+  font-size: 12px;
+}
+
+.head_top .container .head_tr .head_last .ewmf {
+  position: relative;
+}
+
+.head_top .container .head_tr .head_last i {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 32px;
+}
+
+.head_top .container .head_tr .head_last .wb:hover .wber {
+  display: block;
+  background: url("../img/index/head/xl2.jpg") no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 6px #ccc;
+}
+
+.head_top .container .head_tr .head_last .wx:hover .wxer {
+  display: block;
+  background: url("../img/index/head/wx2.jpg") no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 6px #ccc;
+}
+
+.page-rs {
+  background-color: #fff;
+  width: 100%;
+}
+
+.page-rs .container {
+  height: 95px;
+  font-size: 12px;
+}
+
+.page-rs .container .sotelogo-rs {
+  width: 180px;
+  height: 45px;
+  margin-top: 21px;
+  left: 0px;
+}
+
+.page-rs .container .sotelogo-rs a img {
+  width: 170px;
+  height: 45px;
+}
+
+.zhuce .container {
+  height: 510px;
+}
+
+.zhuce .container .zcnr {
+  margin-top: 40px;
+}
+
+.zhuce .container .zcnr .zcnr_r {
+  width: 420px;
+  height: 430px;
+  padding: 35px;
+  margin-right: 68px;
+  box-shadow: 0 0 5px #e1e1e1, 0 0 15px #e1e1e1;
+}
+
+.zhuce .container .zcnr .zcnr_r .sign-title {
+  margin-bottom: 10px;
+}
+
+.zhuce .container .zcnr .zcnr_r .sign-title .zcbt {
+  font-family: 'Microsoft Yahei';
+  color: #5a5d6c;
+  margin: 0;
+  font-size: 21px;
+}
+
+.zhuce .container .zcnr .zcnr_r .sign-title .tzdl {
+  font: 12px/22px 'Microsoft Yahei',Helvetica,Arial,STXihei,SimSun,sans-serif;
+  color: #aaa;
+}
+
+.zhuce .container .zcnr .zcnr_r .sign-title .tzdl a {
+  color: #ec3e7d;
+}
+
+.zhuce .container .zcnr .zcnr_r .sign-title .form-horizontal .input {
+  margin: -20px 0;
+  height: 38px;
+}
+
+.zhuce .container .zcnr .zcnr_r .sign-title .form-horizontal .yzbox #code::before {
+  width: 60px;
+  height: 36px;
+  border: 1px solid #ec3e7d;
+}
