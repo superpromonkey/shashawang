@@ -2,9 +2,12 @@
   font-size: 12px;
 }
 
+.yew {
+  color: #ee9c23;
+}
+
 .details {
   background-color: #eee;
-  height: 1000px;
 }
 
 .details .homeurl {
@@ -53,7 +56,8 @@
 }
 
 .details .goodsdetails .goodste_bot {
-  height: 720px;
+  overflow: hidden;
+  padding-bottom: 40px;
   background-color: #fff;
 }
 
@@ -149,27 +153,252 @@
   color: #959595;
 }
 
-.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang {
-  margin-bottom: 20px;
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .spshuliang {
+  margin-top: 10px;
   width: 100%;
-}
-
-.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang .spsl {
-  font-size: 12px !important;
-}
-
-.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang .spsl .spbtn {
+  height: 21px;
   font-size: 12px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .spshuliang .spbtn {
+  font-size: 14px;
   display: inline-block;
   width: 20px;
   height: 20px;
+  color: #555;
+  font-weight: bold;
   text-align: center;
   border: 1px solid #666;
+  background-color: #efefef;
+  vertical-align: middle;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .spshuliang #jssl {
+  width: 25px;
+  height: 20px;
   background-color: #eee;
 }
 
-.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang .spsl #jssl {
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .detail {
+  display: block;
+  height: 24px;
+  color: #888888;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .detail .action-price {
+  color: #ec3e7d;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox {
+  width: 100%;
+  margin-top: 40px;
+  height: 60px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox .dhtzbyn {
+  float: left;
+  width: 146px;
+  height: 40px;
+  line-height: 38px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 4px;
+  background: #ec3e7d;
+  border-radius: 5px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox .smgw {
+  box-sizing: border-box;
+  font-size: 12px;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #111;
+  text-align: center;
+  padding: 0px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox .smgw .smgw {
+  display: none;
+  position: absolute;
+  top: -150px;
+  left: -12px;
+  width: 148px;
+  height: 148px;
+  background: url("../img/details/smgw.png") no-repeat;
+  background-size: cover;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox .smgw:hover .smgw {
+  display: block;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .pinglun {
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  color: #333;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .fenxiang {
+  width: 100%;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .fenxiang .fenxiang_r {
+  padding-right: 60px;
+  float: right;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .fenxiang .fenxiang_r a {
+  margin-right: 10px;
   display: inline-block;
-  width: 25px;
-  height: 20px;
+  width: 18px;
+  height: 16px;
+  background: url("../img/details/fx1.png") no-repeat;
+  background-size: cover;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brt .fenxiang .fenxiang_r a:nth-child(2) {
+  background: url("../img/details/fx2.png") no-repeat;
+}
+
+.details .xqmain {
+  width: 100%;
+  background-color: #eee;
+}
+
+.details .xqmain .cnxh {
+  overflow: hidden;
+}
+
+.details .xqmain .cnxh .cnxhbt {
+  padding-top: 20px;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  color: #333;
+  line-height: 50PX;
+}
+
+.details .xqmain .cnxh .xhlist li {
+  float: left;
+  width: 212px;
+  height: 310px;
+  padding: 10px 9px 8px 9px;
+  border: solid 1px #eee;
+  background: #fff;
+  margin-right: 10px;
+}
+
+.details .xqmain .cnxh .xhlist li img {
+  width: 212px;
+  height: 212px;
+  margin-bottom: 20px;
+}
+
+.details .xqmain .cnxh .xhlist li:hover img {
+  opacity: 0.5;
+}
+
+.details .xqmain .cnxh .xhlist li:last-child {
+  margin-right: 0px;
+}
+
+.details .xqmain .cnxh .xhlist li .cnnr {
+  color: #888;
+}
+
+.details .xqmain .cnxh .xhlist li .cnscpace span {
+  font-size: 24px;
+  color: #e93b78;
+}
+
+.details .xqmain .spcs {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.details .xqmain .spcs .spcs_l {
+  background-color: #fff;
+  width: 247px;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lt {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #666;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lt .lsbt {
+  font-size: 18px;
+  line-height: 50px;
+  padding-left: 23px;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lt .lsbtl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 50px;
+  background-color: #58bc58;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lb {
+  min-height: 900px;
+  overflow: hidden;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lb li {
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px dashed #d4d4d4;
+  padding: 20px 10px;
+  margin-top: -1px;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lb li .spcs_lbl {
+  overflow: hidden;
+  width: 69px;
+  height: 69px;
+  margin: 0;
+  padding: 0px;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lb li .spcs_lbr {
+  width: 167px;
+  overflow: hidden;
+  color: #3e3e3e;
+}
+
+.details .xqmain .spcs .spcs_l .spcs_lb li .spcs_lbr .lsnr {
+  width: 150px;
+  overflow: hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details .xqmain .spcs .spcs_r {
+  width: 920px;
+  background-color: #fff;
+}
+
+.details .xqmain .spcs .spcs_r .xq_xdbox {
+  width: 100%;
+  color: #555c67;
+  border: 1px solid white;
+  display: block;
+  padding: 2px 26px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
 }
