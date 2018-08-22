@@ -1,3 +1,61 @@
+.sasa_promise {
+  border-bottom: 1px solid #eee;
+}
+
+.sasa_promise .sasa_promiselist {
+  width: 192;
+  height: 120px;
+  padding-left: 46px;
+  box-sizing: border-box;
+  margin-right: 60px;
+  position: relative;
+  padding-top: 38px;
+  float: left;
+}
+
+.sasa_promise .sasa_promiselist i {
+  width: 36px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  background: url("../img/index/main/promise_icon.png") no-repeat;
+}
+
+.sasa_promise .sasa_promiselist .sasatb2 {
+  background-position: -56px 0;
+}
+
+.sasa_promise .sasa_promiselist .sasatb3 {
+  background-position: -112px 0;
+}
+
+.sasa_promise .sasa_promiselist .sasatb4 {
+  background-position: -176px 0;
+}
+
+.sasa_promise .sasa_promiselist .sasatb5 {
+  background-position: -228px 0;
+}
+
+.sasa_promise .sasa_promiselist h3 {
+  font-weight: bold;
+}
+
+.sasa_promise .sasa_promiselist p {
+  color: #aaa;
+}
+
+.sasa_promise .sasa_promiselist:last-child {
+  margin-right: 0;
+}
+
+.peisong {
+  background-color: #fff;
+  width: 100%;
+}
+
 .indexbox {
   background-color: #F2F2F2;
   width: 100%;
@@ -503,59 +561,6 @@
   margin-right: 0px;
 }
 
-.main .container .sasa_promise {
-  border-bottom: 1px solid #eee;
-}
-
-.main .container .sasa_promise .sasa_promiselist {
-  width: 192;
-  height: 120px;
-  padding-left: 46px;
-  box-sizing: border-box;
-  margin-right: 60px;
-  position: relative;
-  padding-top: 38px;
-  float: left;
-}
-
-.main .container .sasa_promise .sasa_promiselist i {
-  width: 36px;
-  height: 32px;
-  display: block;
-  position: absolute;
-  top: 42px;
-  left: 0px;
-  background: url("../img/index/main/promise_icon.png") no-repeat;
-}
-
-.main .container .sasa_promise .sasa_promiselist .sasatb2 {
-  background-position: -56px 0;
-}
-
-.main .container .sasa_promise .sasa_promiselist .sasatb3 {
-  background-position: -112px 0;
-}
-
-.main .container .sasa_promise .sasa_promiselist .sasatb4 {
-  background-position: -176px 0;
-}
-
-.main .container .sasa_promise .sasa_promiselist .sasatb5 {
-  background-position: -228px 0;
-}
-
-.main .container .sasa_promise .sasa_promiselist h3 {
-  font-weight: bold;
-}
-
-.main .container .sasa_promise .sasa_promiselist p {
-  color: #aaa;
-}
-
-.main .container .sasa_promise .sasa_promiselist:last-child {
-  margin-right: 0;
-}
-
 .main .container .mrbkbox .idxmainbt {
   margin-top: 10px;
   text-align: center;
@@ -634,6 +639,22 @@
 
 .main .container .mrbkbox .xsmain .xs_l {
   float: left;
+  position: relative;
+}
+
+.main .container .mrbkbox .xsmain .xs_l .xsyhjg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 10px;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #e93b78;
 }
 
 .main .container .mrbkbox .xsmain .xs_r {
@@ -648,8 +669,8 @@
   top: -20px;
   left: 0px;
   color: #fff;
-  min-width: 80px;
   height: 24px;
+  min-width: 80px;
   overflow: hidden;
   padding: 0 10px;
   text-align: center;
@@ -756,6 +777,7 @@
   background-color: #fff;
   float: left;
   margin-right: 27px;
+  margin-bottom: 20px;
 }
 
 .main .container .mrbkbox .ph_hf h2 {
@@ -775,18 +797,29 @@
   border-top: 1px solid #eee;
 }
 
-.main .container .mrbkbox .ph_hf li .hftupian {
-  position: relative;
-  float: left;
-}
-
-.main .container .mrbkbox .ph_hf li .hftupian .ph_caitiao {
+.main .container .mrbkbox .ph_hf li .ph_caitiao {
   position: absolute;
   width: 42px;
   height: 41px;
   top: -6px;
   left: -4px;
+}
+
+.main .container .mrbkbox .ph_hf li .idxphbt1 {
   background: url("../img/index/main/ranking_1.png") no-repeat;
+}
+
+.main .container .mrbkbox .ph_hf li .idxphbt2 {
+  background: url("../img/index/main/ranking_2.png") no-repeat;
+}
+
+.main .container .mrbkbox .ph_hf li .idxphbt3 {
+  background: url("../img/index/main/ranking_3.png") no-repeat;
+}
+
+.main .container .mrbkbox .ph_hf li .hftupian {
+  position: relative;
+  float: left;
 }
 
 .main .container .mrbkbox .ph_hf li .hftupian img {
@@ -804,7 +837,6 @@
   width: 100%;
   height: 36px;
   line-height: 18px;
-  overflow: hidden;
   margin-top: 13px;
   font-size: 13px;
 }
@@ -824,9 +856,93 @@
 }
 
 .main .container .mrbkbox .ph_hf li .hfcon .hfxx .ph_jg span {
-  color: #aaa;
+  color: #ccc;
 }
 
 .main .container .mrbkbox .ph_hf li .hfcon .hfxx .ph_xl {
   float: right;
+}
+
+.main .container .mrbkbox .ph_hf:last-child {
+  margin: 0px;
+}
+
+.main .container .mrbkbox .newgoodsbox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods {
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  width: 289px;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods:hover {
+  border-color: #666;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xptp {
+  height: 271px;
+  width: 271px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xptp img {
+  width: 271px;
+  height: 271px;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xptp .new_ss {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  background-color: #58bc58;
+  letter-spacing: 1px;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xptp .new_logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xptp .new_logo .nl {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../img/index/main/nl1.png") no-repeat;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xpjs {
+  padding: 10px;
+  font-size: 13px;
+  color: #222;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .new_xpjs .yew {
+  color: #ee9c23;
+}
+
+.main .container .mrbkbox .newgoodsbox .newgoods .nspace {
+  padding: 10px;
+}
+
+.main .container .mrbkbox .newgoodsbox .new_listbox {
+  width: 100%;
+}
+
+.main .container .mrbkbox .newgoodsbox .new_listbox .newgoods:nth-child(4n) {
+  margin-right: 0px;
 }

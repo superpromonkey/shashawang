@@ -1,0 +1,131 @@
+*{font-size: 12px;}
+.details{background-color: #eee;height: 1000px;
+
+    .homeurl{width: 100%;height: 50px;
+        line-height: 50px;
+        a{color: #888888;}
+        & a:hover span{color:#333;}
+    }
+
+    .goodsdetails{overflow: hidden;width: 100%;
+        .goodste_top{width: 100%;
+            background: #bf9b5f;
+            height: 58px;
+            line-height: 50px;
+            color: #fff;
+            font-size: 24px;
+            padding :0 15px;
+            position: relative;
+            .tmjxz{width: 80%;float: left;
+                .wjtime{
+                    font-size: 24px;
+                    margin-left: 200px;
+                }
+            }
+            .ygmjs{float: left; font-size: 12px;}
+        }
+        .goodste_bot{
+            height: 720px;
+            background-color: #fff;
+            .goodste_bl{
+                box-sizing: border-box;
+                width: 550px;
+                float: left;
+                border: 1px solid #555;
+                
+
+            }
+            .goodste_br{
+                // width: 570;
+                float: right;
+                width: 460px;
+                padding-top: 25px;
+                margin-right: 40px;
+                p{
+                    padding-bottom: 30px;
+                    line-height: 1.2;
+                    text-align: left;
+                    font-size: 18px;
+                    font-weight: normal;
+                    .syh{display:inline-block;font-size: 40px;
+                        color:skyblue;
+                    }
+                }
+                .goodste_brc{
+                    border-left: 1px dashed #f0eee2;
+                    padding-left: 30px;
+                    margin-left: -30px;
+                    clear: both;
+                    
+                    .product-titles2 {
+                        padding: 0px;
+                        color: #505a64;
+                        font-size: 12px;
+                        line-height: 26px;
+                        .icon66{
+                            font-size: 12px;
+                            color: #fff;
+                            background: #EC3E7C;
+                            margin-right: 5px;
+                            display: inline-block;
+                            border-radius: 2px;
+                            height: 22px;
+                            line-height: 22px;
+                            padding: 0 5px;
+                            position: relative;
+                            top: 2px;
+                        }
+                        a{color:#888;}
+
+                    }
+                    p{font-size: 12px;line-height: 16px;}
+                    .ruleWrap{
+                        padding: 18px 0 14px;
+                        border-top: 1px solid #d8d8d8;
+                        border-bottom: 1px solid #d8d8d8;
+                        margin-bottom: 5px;
+                        .dispatching{
+                            font-size: 14px;
+                            color: #333;
+                            li div{
+                                display: inline-block;
+                                position: relative;
+                                .hid{padding-bottom: 0;}
+                            }
+                            .one{
+                                width: 50px;
+                                letter-spacing: 5px;
+                                color: #959595
+                            }
+                            
+                        }
+                        .goodste_brt{
+                            .spshuliang{ margin-bottom: 20px;
+                                width: 100%;
+                                .spsl{
+                                    font-size: 12px!important;
+                                    .spbtn{
+                                        font-size: 12px;
+                                        display:inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        text-align: center;
+                                        border: 1px solid #666;
+                                        background-color: #eee;
+                                    }
+                                    #jssl{
+                                        display: inline-block;
+                                        width: 25px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                          
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

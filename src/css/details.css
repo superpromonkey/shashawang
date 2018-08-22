@@ -1,0 +1,175 @@
+* {
+  font-size: 12px;
+}
+
+.details {
+  background-color: #eee;
+  height: 1000px;
+}
+
+.details .homeurl {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.details .homeurl a {
+  color: #888888;
+}
+
+.details .homeurl a:hover span {
+  color: #333;
+}
+
+.details .goodsdetails {
+  overflow: hidden;
+  width: 100%;
+}
+
+.details .goodsdetails .goodste_top {
+  width: 100%;
+  background: #bf9b5f;
+  height: 58px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 24px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.details .goodsdetails .goodste_top .tmjxz {
+  width: 80%;
+  float: left;
+}
+
+.details .goodsdetails .goodste_top .tmjxz .wjtime {
+  font-size: 24px;
+  margin-left: 200px;
+}
+
+.details .goodsdetails .goodste_top .ygmjs {
+  float: left;
+  font-size: 12px;
+}
+
+.details .goodsdetails .goodste_bot {
+  height: 720px;
+  background-color: #fff;
+}
+
+.details .goodsdetails .goodste_bot .goodste_bl {
+  box-sizing: border-box;
+  width: 550px;
+  float: left;
+  border: 1px solid #555;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br {
+  float: right;
+  width: 460px;
+  padding-top: 25px;
+  margin-right: 40px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br p {
+  padding-bottom: 30px;
+  line-height: 1.2;
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br p .syh {
+  display: inline-block;
+  font-size: 40px;
+  color: skyblue;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc {
+  border-left: 1px dashed #f0eee2;
+  padding-left: 30px;
+  margin-left: -30px;
+  clear: both;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .product-titles2 {
+  padding: 0px;
+  color: #505a64;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .product-titles2 .icon66 {
+  font-size: 12px;
+  color: #fff;
+  background: #EC3E7C;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 2px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  position: relative;
+  top: 2px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .product-titles2 a {
+  color: #888;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap {
+  padding: 18px 0 14px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 5px;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .dispatching {
+  font-size: 14px;
+  color: #333;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .dispatching li div {
+  display: inline-block;
+  position: relative;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .dispatching li div .hid {
+  padding-bottom: 0;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .dispatching .one {
+  width: 50px;
+  letter-spacing: 5px;
+  color: #959595;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang .spsl {
+  font-size: 12px !important;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang .spsl .spbtn {
+  font-size: 12px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #666;
+  background-color: #eee;
+}
+
+.details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap .goodste_brt .spshuliang .spsl #jssl {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+}

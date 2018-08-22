@@ -1,3 +1,25 @@
+// 公共样式
+.sasa_promise{
+    border-bottom: 1px solid #eee;
+    .sasa_promiselist{width:192;height:120px;padding-left: 46px;box-sizing: border-box;
+        margin-right: 60px;position: relative;padding-top:38px;float: left;
+            i{width: 36px;height: 32px;
+                display: block;position: absolute;top:42px;left: 0px;
+                background: url('../img/index/main/promise_icon.png') no-repeat;
+            }
+            .sasatb2{background-position: -56px 0;}
+            .sasatb3{background-position: -112px 0;}
+            .sasatb4{background-position: -176px 0;}
+            .sasatb5{background-position: -228px 0;}
+            h3{font-weight: bold;}
+            p{color:#aaa;}
+        }
+        .sasa_promiselist:last-child{margin-right: 0;}
+    } 
+.peisong{background-color: #fff;width: 100%;
+        
+    }
+// 公共样式
 .indexbox{background-color: #F2F2F2;
     width: 100%;}
     .head_top{width: 100%;border-bottom:1px solid #E5E5E5;background-color: #F2F2F2;
@@ -283,23 +305,7 @@
                 }
                 & li:last-child a{margin-right:0px;}
             }
-        .sasa_promise{
-            border-bottom: 1px solid #eee;
-            .sasa_promiselist{width:192;height:120px;padding-left: 46px;box-sizing: border-box;
-                margin-right: 60px;position: relative;padding-top:38px;float: left;
-                    i{width: 36px;height: 32px;
-                        display: block;position: absolute;top:42px;left: 0px;
-                        background: url('../img/index/main/promise_icon.png') no-repeat;
-                    }
-                    .sasatb2{background-position: -56px 0;}
-                    .sasatb3{background-position: -112px 0;}
-                    .sasatb4{background-position: -176px 0;}
-                    .sasatb5{background-position: -228px 0;}
-                    h3{font-weight: bold;}
-                    p{color:#aaa;}
-                }
-                .sasa_promiselist:last-child{margin-right: 0;}
-            } 
+
         // 每日必看
         .mrbkbox{
             .idxmainbt{
@@ -356,7 +362,22 @@
                 height: 360px;
                 overflow: hidden;
                 margin-top: 20px;
-                .xs_l{float: left;}
+                .xs_l{float: left;position: relative;
+                    .xsyhjg{
+                        position: absolute;
+                        top:20px;
+                        left: 20px;
+                        width: 60px;
+                        height: 60px;
+                        z-index: 10px;
+                        color:#fff;
+                        border-radius: 50%;
+                        line-height: 60px;
+                        text-align: center;
+                        font-weight: bold;
+                        background-color:  #e93b78;
+                    }
+                }
                 .xs_r{float: right;
                     width: 480px;
                     height: 280px;
@@ -366,8 +387,9 @@
                     .xsqgtime{
                         top:-20px;
                         left: 0px;
-                        color:#fff;                        min-width: 80px;
+                        color:#fff;                       
                         height: 24px;
+                        min-width: 80px;
                         overflow: hidden;
                         padding: 0 10px;
                         text-align: center;
@@ -458,12 +480,17 @@
                     }
                 }
             // 销售排行榜
+            
             .ph_hf{
                 width: 382px;
                 border-top: 2px solid #fc3f83;
                 background-color: #fff;
                 float: left;
                 margin-right: 27px;
+                margin-bottom: 20px;
+                
+                  
+               
                     h2{
                         width: 100%;
                         height: 64px;
@@ -472,23 +499,30 @@
                         font-size: 22px;
                         color: #111;
                     }
+                   
                 li{
                     width: 362px;
-                    height: 80px;
+                    height: 80px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                     padding: 10px;
                     position: relative;
                     border-top: 1px solid #eee;
-                .hftupian{
-                    position: relative;
-                    float: left;
+
                     .ph_caitiao{
                         position: absolute;
                         width: 42px;
                         height: 41px;
                         top: -6px;
                         left: -4px;
-                        background: url("../img/index/main/ranking_1.png") no-repeat;
                     }
+                    .idxphbt1{background: url("../img/index/main/ranking_1.png") no-repeat;}
+                    .idxphbt2{background: url("../img/index/main/ranking_2.png") no-repeat;}
+                    .idxphbt3{background: url("../img/index/main/ranking_3.png") no-repeat;}
+                    
+
+                .hftupian{
+                    position: relative;
+                    float: left;
+
                     img{
                         max-width: 80px;
                         max-height: 80px;
@@ -502,7 +536,6 @@
                             width: 100%;
                             height: 36px;
                             line-height: 18px;
-                            overflow: hidden;
                             margin-top: 13px;
                             font-size: 13px;
                         .phspace{
@@ -512,7 +545,7 @@
                             .yew{color:#ee9c23;}
                             }
                             .ph_jg{float: left;
-                            span{color: #aaa;}
+                            span{color: #ccc;}
                             }
                             .ph_xl{float: right;}
                            
@@ -520,8 +553,83 @@
                     }  
                 }
                     
-                } 
+                &:last-child{  margin:0px; } 
+                }
+            
+            // 新品
+
+            .newgoodsbox{
+               width: 100%;
+               overflow: hidden;
+              
+              
+               .newgoods{
+                    float: left;
+                    margin-right: 12px;
+                    margin-bottom: 12px;
+                   background-color: #fff;
+                   width: 289px;
+                   border: 1px solid #fff;
+                   position: relative;
+                   &:hover{border-color: #666;}
+
+                   
+                   .new_xptp{
+                        height: 271px;
+                        width: 271px;
+                        padding: 10px;
+                        overflow: hidden;
+                        
+                        img{
+                            width: 271px;
+                            height: 271px;
+                        }
+                        .new_ss{
+                            position: absolute;
+                            top:10px;
+                            left: 10px;
+                            width: 40px;
+                            height: 40px;
+                            padding: 4px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            background-color: #58bc58;
+                            letter-spacing: 1px;
+                        }
+                        .new_logo{
+                            position: absolute;
+                            top:10px;
+                            right: 10px;
+                           .nl{
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background: url('../img/index/main/nl1.png') no-repeat;
+                           }
+                        }
+
+                   }
+                   .new_xpjs{
+                       padding: 10px;
+                    font-size: 13px;
+                    color: #222;
+                    .yew{
+                        color: #ee9c23;
+                        }
+                   }
+                   .nspace{
+                       padding: 10px;
+                   }
+                  
+               }
+               .new_listbox{width: 100%;
+                .newgoods:nth-child(4n){margin-right: 0px;}
+
+                }
+
             }
-  
         }
+  
     }
+}                                                                                                                                   
