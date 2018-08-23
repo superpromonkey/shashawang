@@ -262,8 +262,8 @@
 
         .spcs{width: 100%;overflow: hidden;
             margin-top: 30px;
-            .spcs_l{background-color: #fff;
-                width: 247px;
+            .spcs_l{
+                width: 247px;background-color: #fff;
                 .spcs_lt{
                    
                     width: 100%;
@@ -323,16 +323,268 @@
             }
             .spcs_r{
                 width: 920px;
-                background-color: #fff;
+                overflow: hidden;
+
+                // 吸顶菜单
                 .xq_xdbox{
+                    background-color: #fff;
+                    height: 51px;
+                    overflow: hidden;
                     width: 100%;
-                    color: #555c67;
-                    border: 1px solid white;
+                    font-size: 14px;
+                    float: left;
+                    margin-right: 5px;
+                    font-weight: normal;
+                    .product-tags .tags-hd {
+                        font-size: 14px;
+                        float: left;
+                        margin-right: 5px;
+                        font-weight: normal;
+                    }
+                    .product-tags .active {
+                        border-bottom: 3px solid #c69a62;
+                    }
+                    .product-tags .tags-hd a {
+                        color: #555c67;
+                        border: 1px solid white;
+                        display: block;
+                        padding: 2px 26px;
+                        height: 42px;
+                        line-height: 42px;
+                        font-size: 16px;
+                    }
+                    .tags-addtocart {
+                        float: right;
+                        width: 260px;
+                    }
+                    .tags-addtocart .price {
+                        line-height: 50px;
+                        font-size: 24px;
+                    }
+                    .tags-addtocart .btn {
+                        background: #ec3e7d;
+                        padding: 0px 20px;
+                        height: 50px;
+                        line-height: 50px;
+                        color: #fff;
+                        font-size: 16px;
+                        float: right;
+                        margin-left: 15px;
+                        border-radius: 0;
+                    }
+                }
+
+                // 详细参数
+
+                .mod {
+                    margin-top: 70px;
+                    padding-top: 20px;
+                    background-color: #fff;
+                }
+                .mod-title .mod-title-text {
+                    line-height: 32px;
+                    font-weight: 400;
+                    padding-left: 10px;
+                    font-size: 21px;
+                    background: url('../img/details/probt.png') no-repeat 110px 3px;
+                }
+               
+                
+                .product-section .mod-title {
+                    height: 32px;
+                }
+                .product-attributes ul {
+                    padding: 30px 45px;
+                }
+                .product-attributes li {
+                    clear: both;
+                    color: #333;
+                    padding: 6px 0;
+                }
+                .product-attributes li span {
+                    width: 140px;
+                    color: #666;
+                    display: inline-block;
+                }
+                .attributes-cont {
+                    width: 580px;
+                    float: right;
+                    text-align: left;
+                }
+
+                // 图片
+                .pltp{
+                    width: 100%;
+                    overflow: hidden;
+                    .xqxxtb{
+                        background-position: 110px -50px;
+                    }    
+                    
+                }
+
+
+                // 评论区
+
+                .pinglunxx{
+                    margin-top: 50px;
+                    background: #fff;
+                    overflow: hidden;
+                    margin-bottom: 26px;
+                    width: 100%;
+                    .yhpjtb{
+                        background-position: 110px -146px;
+                        
+                    }
+                }
+                
+
+                
+                .product-score {
+                    width: 100%;
+                    line-height: 24px;
+                }
+
+                .product-score .score-total .values, .product-score .score-total .values .stars, .product-score .score-total .values .stars .below {
+                    width: 105px;
+                }
+                .product-score td {
+                    padding: 15px 10px;
+                }
+                .btn-k {
+                    border: 2px solid #ec3e7d;
+                    padding: 4px 30px;
+                    font-size: 18px;
+                    color: #ec3e7d;
+                }
+                .koubeipoint {
+                    font-size: 24px;
+                    line-height: 40px;
+                    padding-left: 45px;
+                }
+                .koubeipoint b {
+                    font-size: 36px;
+                    color: #db3f7e
+                }
+                .comment-list .title {
+                    padding-left: 55px;
+                    margin-top: -20px;
+
+                }
+             
+                
+                user agent stylesheet
+                div {
                     display: block;
-                    padding: 2px 26px;
-                    height: 42px;
-                    line-height: 42px;
-                    font-size: 16px 
+                }
+                .comment-list {
+                    padding: 10px 10px 10px 10px;
+                    line-height: 24px;
+                }
+                ul, li{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                .comment-list .comment-item {
+                    margin: 15px 0 40px 0;
+                }
+                input, select, textarea {
+                    border-width: 1px;
+                    border-color: #cccccc;
+                    padding: 1px;
+                }
+                .comment-list .member-avatar {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 58px;
+                    overflow: hidden;
+                    text-align: center;
+                    font-family: Arial;
+                    margin: 0 auto;
+                    padding: 1px;
+                }
+                .iconfont {
+                    font-family: "iconfont" !important;
+                    font-size: 30px;
+                    font-style: normal;
+                    -webkit-font-smoothing: antialiased;
+                    -webkit-text-stroke-width: 0px;
+                    -moz-osx-font-smoothing: grayscale;
+                    line-height: 1;
+                }
+                
+                .comment-list .discuss-label {
+                    overflow: hidden;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #333;
+                    margin-bottom: 10px;
+                }
+                .comment-list .member {
+                    width: 145px;
+                    float: left;
+                    text-align: center;
+                    margin-right: 5px;
+                    .username {
+                        width: 145px;
+                        word-break: break-all;
+                        line-height: 16px;
+                    }
+                }
+                .comment-list .member-discuss {
+                    position: relative;
+                    width: 575px;
+                    margin-left: 150px;
+                    padding: 20px 24px;
+                    background-color: #f2f2f2;
+                    border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                     .point {
+                        position: absolute;
+                        overflow: hidden;
+                        font-size: 0;
+                        line-height: 0;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .comment-list .point i {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        overflow: hidden;
+                        border: 10px dashed transparent;
+                    }
+                    .comment-list .point-left .above {
+                        border-right-color: #f2f2f2;
+                        left: 0px;
+                        top: 0;
+                    }
+                    .comlst-title {
+                        float: left;
+                        margin-right: 20px;
+                        color: #ec3e7d;
+                        font-size: 18px;
+                        width: 40%;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    .comlst-point {
+                        margin-right: 5px;
+                    }
+                    .discuss-detail {
+                        color: #575e68;
+                    }
+                    .discuss-time {
+                        font-size: 14px;
+                        color: #bebebe;
+                        clear: both;
+                        line-height: 40px;
+                    }
+                    .post-reply .btn-close, .post-answer .btn-close {
+                        margin-left: 10px;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
                 }
             }
         }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/siwper/swiper.css">
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script src="../lib/siwper/swiper.js"></script>
+    <style>
+        .swiper-slide{
+            height: 400px;
+            width: 1200px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                  <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar" style="height: 15px;">
+                    <div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px); width: 261.333px;"></div></div>
+        </div>
+        <script>
+                new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: true,
+                        },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    });
+        </script>
+</body>
+</html>

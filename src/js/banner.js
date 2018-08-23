@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+   document.addEventListener('DOMContentLoaded',()=>{
      var Carousel = function(options){
          // 属性
          // 默认值
