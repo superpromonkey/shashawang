@@ -5,8 +5,365 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>莎莎网列表页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/ssgoodslilst.css">
+    <link rel="stylesheet" href="../css/headandfot.css">
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/commonjg.js"></script>
+   
 </head>
 <body>
     
+    <div id="head_top"></div> 
+    <div id="pagess"></div>
+    <div id="nav-category"></div>
+
+    <!-- 详情页主体部分 -->
+    <div id="lsitmain">
+        <div class="container">
+            <div class="list_tp"></div>
+            <div class="list_bt">
+                
+            <!-- 商品列表导航 ///////////////////////////-->
+                <div class="list_bl .lsidebar fl">
+                    <div class="spfxlist">
+                        <div class="lsidebar">
+                            <div class="refilter">
+                                <div class="cpfl-bt">产品分类</div>
+                                <ul class="gray-box l_aone m">
+                                    <li class="ahover">
+                                        <i></i>
+                                        <span class=""><a href="/facial-care">面部护肤</a></span>
+                                        <ul class="l_btwo hide">
+                                            <li>
+                                                <a href="/facial-care/cleanser"><span></span> 洁面</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/exfoliator"><span></span> 磨砂</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/makeup-remover"><span></span> 卸妆</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/toner"><span></span> 化妆水</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/essence"><span></span> 精华</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/cream"><span></span> 面霜</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/mask"><span></span> 面膜</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/neck-care"><span></span> 颈部护理</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/eye-care"><span></span> 眼部护理</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/acne-care"><span></span> 暗疮护理</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/lip-care"><span></span> 唇部护理</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/sunscreen"><span></span> 防晒护理</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/beauty-equipment"><span></span> 高端美容仪器</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/beauty-tools"><span></span> 美容工具</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/set"><span></span> 套裝</a>
+                                            </li>
+                                            <li>
+                                                <a href="/facial-care/sample"><span></span> 小样</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/makeup">彩妆</a></span>
+                                        <ul class="l_btwo hide">
+                                                        <li>
+                                                <a href="/makeup/primer-liquid"><span></span> 隔离霜</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/foundation"><span></span> 粉底</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/concealer"><span></span> 遮瑕</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/bb-cream"><span></span> BB霜</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/cc-cream_cream"><span></span> CC霜</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/rouge"><span></span> 胭脂</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/eyebrow"><span></span> 眉笔/眉粉</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/eyeshadow"><span></span> 眼影</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/eye-liner"><span></span> 眼线</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/mascara"><span></span> 睫毛膏</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/lip-makeup"><span></span> 美唇</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/makeup-pallete_pallete-or-sets"><span></span> 彩妆盒/套装</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/makeup-brush"><span></span> 化妆扫</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/makeup-tools"><span></span> 化妆工具</a>
+                                            </li>
+                                                        <li>
+                                                <a href="/makeup/nail-polish"><span></span> 美甲</a>
+                                            </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="">
+                                    <i></i>
+                                    <span class="active"><a href="/fragrance">香水</a></span>
+                                            <ul class="l_btwo">
+                                                    <li>
+                                            <a href="/fragrance/ladies-fragrance"><span></span> 女士香水</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/fragrance/mens-fragrance" style="color:#c69a62;"><span></span> 男士香水</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/fragrance/fragrance-sets"><span></span> 香水套装</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/fragrance/fragrance-tools"><span></span> 香水工具</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/health">健康美肌</a></span>
+                                            <ul class="l_btwo hide">
+                                                    <li>
+                                            <a href="/health/beauty-supplements"><span></span> 美容补充品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/health/supplements"><span></span> 保健品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/health/otc-drug"><span></span> 非处方药品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/health/healthy-snacks"><span></span> 健康零食</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/health/herbal-products"><span></span> 天然草本茶</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/body-and-bust">纤体美胸</a></span>
+                                            <ul class="l_btwo hide">
+                                                    <li>
+                                            <a href="/body-and-bust/slimming-treatment"><span></span> 纤体护理</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/body-and-bust/slim-food"><span></span> 纤体食品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/body-and-bust/slimming-accessories"><span></span> 纤体工具</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/body-and-bust/slimming-suit"><span></span> 纤体套装</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/body-and-bust/bust-beauty"><span></span> 美胸用品</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/personal-care">个人护理</a></span>
+                                            <ul class="l_btwo hide">
+                                                    <li>
+                                            <a href="/personal-care/bath-and-moisturizer"><span></span> 沐浴/润肤</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/shampoo-and-conditioner"><span></span> 洗发/护发</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/hairstyling"><span></span> 头发造型</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/hands-and-feet"><span></span> 手足部护理</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/hair-removal"><span></span> 脱毛用品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/women-care"><span></span> 女性护理</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/deodorants"><span></span> 止汗香体</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/contact-lenses"><span></span> 隐形眼镜</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/oral-care"><span></span> 口腔护理</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/household-items"><span></span> 家居用品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/personal-care/accessories"><span></span> 头饰/饰物</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/gallery-419.html"><span></span> 礼品套装</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/for-him">男士专区</a></span>
+                                            <ul class="l_btwo hide">
+                                                    <li>
+                                            <a href="/for-him/facial-wash"><span></span> 男士洁面</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/for-him/skin-care"><span></span> 男士护肤</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/for-him/shaving"><span></span> 剃须护理</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/for-him/hair-care"><span></span> 男士头部护理</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/mother-baby-care">孕婴护理</a></span>
+                                            <ul class="l_btwo hide">
+                                                    <li>
+                                            <a href="/mother-baby-care/baby-bath"><span></span> 婴儿沐浴</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/mother-baby-care/baby-skincare"><span></span> 婴儿护肤</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/mother-baby-care/baby-food"><span></span> 婴儿食品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/mother-baby-care/pregnancy-skincare"><span></span> 孕妇护肤</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/mother-baby-care/pregnancy-food"><span></span> 孕妇食品</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/mother-baby-care/pregnancy-tools"><span></span> 其他孕婴工具</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+
+                                    <li class="ahover">
+                                    <i></i>
+                                    <span class=""><a href="/gallery-414.html">配件</a></span>
+                                            <ul class="l_btwo hide">
+                                                    <li>
+                                            <a href="/gallery-415.html"><span></span> 頸鍊</a>
+                                        </li>
+                                                    <li>
+                                            <a href="/gallery-416.html"><span></span> 吊飾</a>
+                                        </li>
+                                                </ul>
+                                    </li>
+                                </ul>
+                            </div>            
+                            <!-- <div class="gray-box sales-rank m" id="hst">
+                                <div class="gray-title">浏览记录</div>
+                                <div class="gray-content">
+                                    <div class="product-list" id="box_430"><li class="product-item"><a href="/fragrance/BURBERRY-102202902001.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>BURBERRY 伦敦男士 倫敦男用淡香水噴霧 100毫升" inner_img="http://cn04alicdn.sasa.com/public/images/f2/cc/04/06bc8d542b59d246055023230d0a547e05ff0b39.jpg?1485415576#h" gid="23107" class="product-img"><img src="http://cn04alicdn.sasa.com/public/images/f2/cc/04/06bc8d542b59d246055023230d0a547e05ff0b39.jpg?1485415576#h" width="140" height="140" class="img"></a><div class="product-info"><div class="product-name"><a href="/fragrance/BURBERRY-102202902001.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>BURBERRY 伦敦男士 倫敦男用淡香水噴霧 100毫升"><b class="yew">香港特快直送 零扣关 </b>BURBERRY 伦敦男士 倫敦男用淡香水噴霧 100毫升</a></div><div class="product-price">¥369.0<del class="grey f12 ml10">666￥369.0</del></div><a href="/cart-add-goods-23523-23107-1.html" class="btn-scart">加入购物车</a></div></li> <li class="product-item"><a href="/facialcare/Kanebo-108993713001.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>嘉娜宝  特效防晒啫喱SPF50+ PA++++ 90克" inner_img="http://cn02alicdn.sasa.com/public/images/8f/00/c7/47be49b38b5b1d4cdfaca03ecd649147f7f346aa.jpg?1531729391#h" gid="26565" class="product-img"><img src="http://cn02alicdn.sasa.com/public/images/8f/00/c7/47be49b38b5b1d4cdfaca03ecd649147f7f346aa.jpg?1531729391#h" width="140" height="140" class="img"></a><div class="product-info"><div class="product-name"><a href="/facialcare/Kanebo-108993713001.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>嘉娜宝  特效防晒啫喱SPF50+ PA++++ 90克"><b class="yew">香港特快直送 零扣关 </b>嘉娜宝  特效防晒啫喱SPF50+ PA++++ 90克</a></div><div class="product-price">¥188.0<del class="grey f12 ml10">666￥188.0</del></div><a href="/cart-add-goods-26974-26565-1.html" class="btn-scart">加入购物车</a></div></li> <li class="product-item"><a href="/facialcare/JMsolution-108845003001.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>JMsolution  肌司研蜜萤润蜂胶面膜 30毫升X10" inner_img="http://cn04alicdn.sasa.com/public/images/4e/e9/91/63fac48dd254a5ce7745f8e249629cfc8339ad3c.jpg?1516776734#h" gid="25767" class="product-img"><img src="http://cn04alicdn.sasa.com/public/images/4e/e9/91/63fac48dd254a5ce7745f8e249629cfc8339ad3c.jpg?1516776734#h" width="140" height="140" class="img"></a><div class="product-info"><div class="product-name"><a href="/facialcare/JMsolution-108845003001.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>JMsolution  肌司研蜜萤润蜂胶面膜 30毫升X10"><b class="yew">香港特快直送 零扣关 </b>JMsolution  肌司研蜜萤润蜂胶面膜 30毫升X10</a></div><div class="product-price">¥62.0<del class="grey f12 ml10">666￥62.0</del></div><a href="/cart-add-goods-26176-25767-1.html" class="btn-scart">加入购物车</a></div></li> <li class="product-item"><a href="/facialcare/Biotherm-108150410001.html" target="_blank" title="<b class='yew'>国内保税仓 零扣关 </b>碧欧泉  活泉柔肤水 400毫升" inner_img="http://cn03alicdn.sasa.com/public/images/06/26/aa/90b8595ad0b26d8616a4ba589b6cbf0b277b8c20.jpg?1476169221#h" gid="20191" class="product-img"><img src="http://cn03alicdn.sasa.com/public/images/06/26/aa/90b8595ad0b26d8616a4ba589b6cbf0b277b8c20.jpg?1476169221#h" width="140" height="140" class="img"></a><div class="product-info"><div class="product-name"><a href="/facialcare/Biotherm-108150410001.html" target="_blank" title="<b class='yew'>国内保税仓 零扣关 </b>碧欧泉  活泉柔肤水 400毫升"><b class="yew">国内保税仓 零扣关 </b>碧欧泉  活泉柔肤水 400毫升</a></div><div class="product-price">¥169.0<del class="grey f12 ml10">666￥169.0</del></div><a href="/cart-add-goods-20614-20191-1.html" class="btn-scart">加入购物车</a></div></li> <li class="product-item"><a href="/makeup/Guerlain-108379604016.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>娇兰  金钻修颜粉底液 SPF30-PA+++  #01 Beige Pâle 30毫升#01 Beige Pâle" inner_img="http://cn04alicdn.sasa.com/public/images/b4/65/6f/5ab77326ea58ff266df6711e298b64af3f70ab85.jpg?1488506008#h" gid="23566" class="product-img"><img src="http://cn04alicdn.sasa.com/public/images/b4/65/6f/5ab77326ea58ff266df6711e298b64af3f70ab85.jpg?1488506008#h" width="140" height="140" class="img"></a><div class="product-info"><div class="product-name"><a href="/makeup/Guerlain-108379604016.html" target="_blank" title="<b class='yew'>香港特快直送 零扣关 </b>娇兰  金钻修颜粉底液 SPF30-PA+++  #01 Beige Pâle 30毫升#01 Beige Pâle"><b class="yew">香港特快直送 零扣关 </b>娇兰  金钻修颜粉底液 SPF30-PA+++  #01 Beige Pâle 30毫升#01 Beige Pâle</a></div><div class="product-price">¥468.0<del class="grey f12 ml10">666￥520.0</del></div><a href="/cart-add-goods-23979-23566-1.html" class="btn-scart">加入购物车</a></div></li></div>
+                                </div>
+                            </div>          -->
+                        </div>
+                    </div>
+                    
+                    <!-- 历史纪录 -->
+                    <div class="spfx">
+                            <div class="spcs_l fl">
+                                <p class="lsbt">历史纪录</p>
+                                <i class="lsbtl"></i>
+                            </div>
+                        <div class="spcs_lb">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/details/ls1.jpg" alt="" class="spcs_lbl fl">
+                                        <div class="spcs_lbr fr">
+                                            <b class="yew">香港特快直送 零扣关 </b>
+                                            <p class="lsnr"><span class="lsyc">JMsolution  肌司研蜜萤润蜂胶面膜 30毫升X10</span></p>
+                                            <div class="product-price">￥62.0<del class="grey f12 ml10">￥62.0</del></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/details/ls2.jpg" alt="" class="spcs_lbl fl">
+                                        <div class="spcs_lbr fr">
+                                            <b class="yew">香港特快直送 零扣关 </b>
+                                            <p class="lsnr"><span class="lsyc">JMsolution  肌司研蜜萤润蜂胶面膜 30毫升X10</span></p>
+                                            <div class="product-price">￥62.0<del class="grey f12 ml10">￥62.0</del></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/details/ls3.jpg" alt="" class="spcs_lbl fl">
+                                        <div class="spcs_lbr fr">
+                                            <b class="yew">香港特快直送 零扣关 </b>
+                                            <p class="lsnr"><span class="lsyc">JMsolution  肌司研蜜萤润蜂胶面膜 30毫升X10</span></p>
+                                            <div class="product-price">￥62.0<del class="grey f12 ml10">￥62.0</del></div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list_br fr">
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="listfot"></div> 
 </body>
 </html>

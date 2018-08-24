@@ -30,14 +30,19 @@
             overflow: hidden;
             padding-bottom: 40px;
             background-color: #fff;
+
+            // 左边放大镜
+
             .goodste_bl{
                 box-sizing: border-box;
                 width: 550px;
                 float: left;
+                overflow: hidden;
                 border: 1px solid #555;
-                
-
             }
+
+
+            // 右边商品信息
             .goodste_br{
                 // width: 570;
                 float: right;
@@ -81,7 +86,7 @@
                         a{color:#888;}
 
                     }
-                    p{font-size: 12px;line-height: 16px;}
+                    p{font-size: 12px;line-height: 30px;}
                     .ruleWrap{
                         padding: 18px 0 14px;
                         border-top: 1px solid #d8d8d8;
@@ -321,6 +326,7 @@
                     }
                 }
             }
+            
             .spcs_r{
                 width: 920px;
                 overflow: hidden;

@@ -8,83 +8,13 @@
     <link rel="stylesheet" href="../css/dlandzc.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/page.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../lib/jquery-3.2.1.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/yzm.js"></script>
     <script src="../js/common.js"></script>
-    <script>
-        /*
-            练习：实现注册成功后跳转到登录页面，并输入用户名密码登录
-            */
-        document.addEventListener('DOMContentLoaded',()=>{
-            let username = document.querySelector('#username');
-            let password = document.querySelector('#password');
-            let btnReg = document.querySelector('.btnReg');
+    <script src="../js/dlandzc.js"></script>
 
-            let status = [200,304];
-
-            let isok = false;
-
-            username.focus();
-
-            // 注册
-            btnReg.onclick = ()=>{
-                if(!isok){
-                    return false;
-                }
-
-                // 获取用户名/密码
-                let _username = username.value;
-                var _password = password.value;
-
-                let xhr = new XMLHttpRequest();
-                xhr.onload = ()=>{
-                    if(status.indexOf(xhr.status) >= 0){
-                        console.log(xhr.responseText);
-                    }
-                }
-                xhr.open('post','../api/reg.php',true);
-
-                // 设置请求头，以便后端接收post数据
-                xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-
-
-                xhr.send(`username=${_username}&password=${_password}`);
-                location.href = 'zccg.html';
-            }
-
-
-            // 验证用户名是否存在
-            username.onblur = ()=>{
-                let _username = username.value;
-
-                let xhr = new XMLHttpRequest();
-                
-                xhr.onload = ()=>{
-                    if(status.indexOf(xhr.status) >= 0){
-                        var formGroup = username.parentNode;
-                        if(xhr.responseText === 'yes'){
-                            isok = true;
-
-                            // 成功：添加has-success类
-                            formGroup.classList.remove('has-error');
-                            formGroup.classList.add('has-success');
-                            username.nextElementSibling.innerText = '';
-                        }else if(xhr.responseText === 'no'){
-                            isok = false;
-                            formGroup.classList.remove('has-success');
-                            formGroup.classList.add('has-error');
-                            username.nextElementSibling.innerText = '用户名已存在';
-                        }
-                    }
-                }
-                xhr.open('get','../api/check_username.php?username='+_username,true);
-                xhr.send();
-
-
-            }
-        });
-    </script>
 </head>
 <body>
     <!-- head头部 -->
@@ -165,11 +95,11 @@
                                 </p>
                             </div>
                             <!-- 信息填写 -->
-                            <div class="bdtx">
-                                <div class="form-group">
+                            <div class="bdtx form">
+                                <div class="form-group ">
                                     <label for="username"></label>
                                     <input type="email" id="username" name="username" 
-                                    class="form-control input-ls"
+                                    class="form-control input-ls srts  glyphicon-ok"
                                     placeholder="请输入邮箱/手机号，最少5个字符">
                                     <span class="help-block"></span>
                                     
@@ -179,26 +109,35 @@
                                             <input type="password" id="password" name="password" 
                                             class="form-control input-ls"
                                             placeholder="请输入密码6-16位字母和数字的组合">
-                                            
+                                            <span class="help-block"></span>
                                     </div>
                                     <div class="form-group">
                                             <label for="passwords"></label>
                                             <input type="password" id="passwords" name="passwords" 
                                             class="form-control input-ls"
                                             placeholder="再次填写密码">
-                                            
+                                            <span class="help-block"></span>
                                     </div>
                                     <div class="form-group col-xs-5 yzbox">
                                             <label for="code"></label>
                                             <input type="text" id="code" name="code" 
                                             class="form-control input-ls"
                                             placeholder="填写验证码">
-                                        <!-- <div class="codenum"></div> -->
+                                            <span class="help-block"></span>
                                     </div>
+                                        <div class="codenum"></div>
+
+                                        <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> 记住我
+                                                  <a href="#">忘记密码</a>
+                                                </label>
+                                              </div>
+                                           
                                 <div class="form-group">
                                     <button class="btn btn-success btnReg btn-block">注册</button>
                                 </div>
-                            </div>>
+                            </div>
                         </div>
                     </div>
                     <div class="zcnr_l fr">

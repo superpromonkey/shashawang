@@ -92,11 +92,46 @@
                             color: #aaa; 
                             a{  color: #ec3e7d;}
                         }
+                    }
                     // 信息填写
                         
-                    .bdtx{width: 200px;height: 36px;}    
-                
+                    .bdtx{width:100%;height: 36px;
+                      
+                         
+                        
+                        .form-group{margin-bottom: 0px;
+                            position: relative;
+                            .help-block{position: absolute;
+                                top: 57px;left: 5px;
+                                font-size: 12px;line-height: 12px;
+                                font-weight: bold;
+                                margin :0px;
+                            }
+                        }
+                       .yzbox{margin-bottom: 0px;
+                        margin: 0px;
+                        padding-left: 0px;
+                        display: inline-block;
+                       
                     }
+                    .codenum{width: 120px;height: 32px;
+                        margin-top: 20px;
+                        border: 1px solid skyblue;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 28px;
+                        letter-spacing: 4px;
+                        line-height: 32px;
+                    }
+                    .checkbox label {
+                        margin-top: 26px;
+                    }
+                    .btn-block{margin-top: 10px;width: 100%;}
+                        
+                    
+                    }    
+                        
+                 
                 }
             }
         }

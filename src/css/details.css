@@ -65,6 +65,7 @@
   box-sizing: border-box;
   width: 550px;
   float: left;
+  overflow: hidden;
   border: 1px solid #555;
 }
 
@@ -123,7 +124,7 @@
 
 .details .goodsdetails .goodste_bot .goodste_br .goodste_brc p {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 30px;
 }
 
 .details .goodsdetails .goodste_bot .goodste_br .goodste_brc .ruleWrap {
