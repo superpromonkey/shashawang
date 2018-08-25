@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>莎莎网详情页</title>
-    <!-- <link rel="stylesheet" href="../css/index.css"> -->
     <link rel="stylesheet" href="../css/base.css">
-    <!-- <link rel="stylesheet" href="../css/page.css"> -->
-    <!-- <link rel="stylesheet" href="../css/comfot.css"> -->
-    <!-- <link rel="stylesheet" href="../css/banner.css"> -->
     <link rel="stylesheet" href="../css/details.css">
     <link rel="stylesheet" href="../css/xqzooz.css">
+    <link rel="stylesheet" href="../css/css.css">
     <link rel="stylesheet" href="../icon/hzp/iconfont.css">
     <link rel="stylesheet" href="../icon/myitmezt/iconfont.css">
-    <!-- <script src="../lib/jquery-3.2.1.js"></script> -->
+    <script src="../lib/jquery-3.2.1.js"></script>
     <script src="../js/details.js"></script>
+    <script src="../js/commonjg.js"></script>
     <!-- <script src="../js/xqzooz.js"></script> -->
     <!-- <script src="../js/index.js"></script> -->
     <!-- <script src="../js/common.js"></script> -->
@@ -23,6 +21,13 @@
     <!-- <script src="../js/commonjg.js"></script> -->
 </head>
 <body>
+    <!-- 头部 -->
+    <!-- <div class="head_top"></div> -->
+    <!-- 搜索 -->
+    <!-- <div id="pagess"></div> -->
+    <!-- 导航栏 -->
+    <!-- <div id="nav-category"></div> -->
+    
     <div class="details">
         <div class="container">
             <!-- 导航路径 -->
@@ -45,90 +50,85 @@
                 </div>
                 <div class="goodste_bot">
                     <!-- 商品放大镜 -->
-                    <div class="goodste_bl">
-                    <!-- <div id="product_album" class="product-album">
-                            <div class="product-album-preview clearfix">
-                            <i class="icon-over3 hide">抢光啦</i>
-                            <div class="product-album-pic" style="width:300px;height:300px;line-height:298px;*font-size:270px;">
-                            <a href="http://cn02alicdn.sasa.com/public/images/6a/0b/58/349c2918bec6cd7f715dd47a2b5f03fa653b373a.jpg?1531729391#h" class="album-preview-container" id="op_product_zoom"><img src="http://cn02alicdn.sasa.com/public/images/7c/36/a5/b3e10d8dcc2f76ce4093f0ca7dcff3f47f35c8f9.jpg?1531729391#h" alt="特效防晒啫喱SPF50+ PA++++" class="small-pic" style="max-width:300px;max-height:300px;"><div class="album-zooms-handle" style="width: 200px; height: 150px; visibility: hidden; left: 100px; top: 56px;"></div></a>
-                            </div>
-                            <img class="loading" app="b2c" src="http://cn01.alicdn.sasa.com/public/app/b2c/statics/images/loading.gif" alt="正在加载大图..." style="display:none;" height="16" width="16">    <div class="product-album-zoom"><a href="/product-albums-26974.html" title="点击查看大图" target="_blank" class="icon">J</a></div>
-                            <div class="loading" style="visibility: hidden; left: 182px; top: 236px;"><img alt="loading..." src="http://cn01.alicdn.sasa.com/public/app/b2c/statics/images/loading.gif"> 正在加载大图...</div></div>
-                        <dl class="product-tips clb">
-                            <dd>
-                                    <img src="http://cn04alicdn.sasa.com/public/images/4b/c4/be/658eaaa004abf71273aa72856b3b9430e875f4d1.png?1437562102#h" alt="日本品牌">
-                        日本品牌			</dd>
-                                
-                        
-                        </dl>
-                        <div class="product-album-thumb product-album-thumb-bottom">
-                            <div class="flip prev forward over"><a href="javascript:void(0);" class="icon">4</a></div>
-                            <div class="thumbnail-list">
-                            <ul class="clearfix" style="width: 542px;">
-                                <li class="active">
-                                    <div class="arrow arrow-top"><i class="below"></i></div>
-                                    <div class="thumbnail"><a href="http://cn02alicdn.sasa.com/public/images/6a/0b/58/349c2918bec6cd7f715dd47a2b5f03fa653b373a.jpg?1531729391#h" rel="op_product_zoom" rev="http://cn02alicdn.sasa.com/public/images/7c/36/a5/b3e10d8dcc2f76ce4093f0ca7dcff3f47f35c8f9.jpg?1531729391#h">
-                                        <img src="http://cn02alicdn.sasa.com/public/images/8f/00/c7/47be49b38b5b1d4cdfaca03ecd649147f7f346aa.jpg?1531729391#h" alt="特效防晒啫喱SPF50+ PA++++" width="60" height="60"></a></div>
-                                </li>
-                                            <li>
-                                    <div class="arrow arrow-top"><i class="below"></i></div>
-                                    <div class="thumbnail"><a href="http://cn04alicdn.sasa.com/public/images/48/1c/6c/b50b3713150ce830408ac723384fbdf34013508e.jpg?1531729391#h" rel="op_product_zoom" rev="http://cn04alicdn.sasa.com/public/images/cc/8f/e1/0103e75bc28fa08ae9ef68b1d2fb3ac0a2b7a9cc.jpg?1531729391#h"
-                                        ><img src="http://cn04alicdn.sasa.com/public/images/6e/0e/57/f27d25c2378ad0c08ead5930ed695036f1e61c3e.jpg?1531729391#h" alt="特效防晒啫喱SPF50+ PA++++" width="60" height="60"></a></div>
-                                </li>
-                                            <li>
-                                    <div class="arrow arrow-top"><i class="below"></i></div>
-                                    <div class="thumbnail"><a href="http://cn04alicdn.sasa.com/public/images/8b/cb/23/e5641c7560fb506d353733ca440be72e88eedb0a.jpg?1531729392#h" rel="op_product_zoom" rev="http://cn04alicdn.sasa.com/public/images/90/e8/4f/868fe3ea5bdc9e0e1d6c367b246e21670f2f15e9.jpg?1531729392#h">
-                                        <img src="http://cn03alicdn.sasa.com/public/images/68/ef/07/d220228cfcd9ade2cd70796dfc0fb2145fe7ef3c.jpg?1531729392#h" alt="特效防晒啫喱SPF50+ PA++++" width="60" height="60"></a></div>
-                                </li>
-                                            <li>
-                                    <div class="arrow arrow-top"><i class="below"></i></div>
-                                    <div class="thumbnail"><a href="http://cn02alicdn.sasa.com/public/images/e2/59/3b/da863a1b7246743774e38ae0f3d066d685bfc56b.jpg?1531729392#h" rel="op_product_zoom" rev="http://cn02alicdn.sasa.com/public/images/2e/d8/98/ea558a4c5669329f3de1f92c69d7c9b830cd984b.jpg?1531729392#h">
-                                        <img src="http://cn04alicdn.sasa.com/public/images/c2/ae/0a/65325684b1459fe44ac25ef2aa563cc3bf143a2d.jpg?1531729392#h" alt="特效防晒啫喱SPF50+ PA++++" width="60" height="60"></a></div>
-                                </li>
-                                            <li>
-                                    <div class="arrow arrow-top"><i class="below"></i></div>
-                                    <div class="thumbnail">
-                                        <a href="http://cn03alicdn.sasa.com/public/images/6b/e6/b7/0a4bed483dacabe6cfe107a6806c5c477c590a02.jpg?1531729393#h" rel="op_product_zoom" rev="http://cn04alicdn.sasa.com/public/images/76/83/9c/9ec3b28a958ec0c44f13cbd61f3a6418cda103b2.jpg?1531729393#h">
-                                            <img src="http://cn02alicdn.sasa.com/public/images/4e/a0/64/dbbaefc0b925c3299f40839c4941835310936fdb.jpg?1531729393#h" alt="特效防晒啫喱SPF50+ PA++++" width="60" height="60"></a></div>
-                                </li>
-                                        </ul>
-                            </div>
-                            <div class="flip next backward "><a href="javascript:void(0);" class="icon">5</a></div>
-                        </div>
-                        </div> -->
-
-
-
-                        <div class="box">
-                                <div class="tb-booth tb-pic tb-s310">
-                                    <a href="images/01.jpg"><img src="http://cn02alicdn.sasa.com/public/images/6a/0b/58/349c2918bec6cd7f715dd47a2b5f03fa653b373a.jpg?1531729391#h" alt="美女" rel="http://cn04alicdn.sasa.com/public/images/90/e8/4f/868fe3ea5bdc9e0e1d6c367b246e21670f2f15e9.jpg?1531729392#h" class="jqzoom" /></a>
-                                </div>
-                                <ul class="tb-thumb" id="thumblist">
-                                    <li class="tb-selected">
-                                        <div class="tb-pic tb-s40"><a href="#"><img src="http://cn04alicdn.sasa.com/public/images/6e/0e/57/f27d25c2378ad0c08ead5930ed695036f1e61c3e.jpg?1531729391#h" alt="特效防晒啫喱SPF50+ PA++++" width="60" height="60""></a></div>
-                                    </li>
-                                    <li>
-                                        <div class="tb-pic tb-s40"><a href="#"><img  src="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/02_small.jpg" mid="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/02_mid.jpg" big="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/02.jpg"></a></div></li>
-                                    <li>
-                                        <div class="tb-pic tb-s40"><a href="#"><img src="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/03_small.jpg" mid="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/03_mid.jpg" big="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/03.jpg"></a></div></li>
-                                    <li>
-                                        <div class="tb-pic tb-s40"><a href="#"><img src="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/04_small.jpg" mid="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/04_mid.jpg" big="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/04.jpg"></a></div></li>
-                                    <!-- <li><div class="tb-pic tb-s40"><a href="#"><img src="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/05_small.jpg" mid="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/05_mid.jpg" big="http://demo.lanrenzhijia.com/2015/jqzoom0225/images/05.jpg"></a></div></li> -->
-                                </ul>
-                            </div>
-                            <script src="http://www.lanrenzhijia.com/ajaxjs/1.4.2/jquery-1.4.2.min.js"></script>
-                            <script src="../js/xqzooz.js"></script> 
-                            <script>
-                            $(function(){
-                                $(".jqzoom").imagezoom();
-                                $("#thumblist li a").click(function(){
-                                    $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
-                                    $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
-                                    $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
-                                });
-                            });
-                            </script>
+                    <div class="goodste_bl" id="myzooz">
+                            <!-- <div align="center" class="zoozcj">  
+                                    <div id=preview>
+                                        <div class=jqzoom id=spec-n1 onClick="window.open('http://sc.chinaz.com/')"><IMG height=350
+                                        src="../img/img04.jpg" jqimg="../img/img04.jpg" width=350>
+                                        </div>
+                                        <div id=spec-n5>
+                                            <div class=control id=spec-left>
+                                                <img src="../img/left.gif" />
+                                            </div>
+                                            <div id=spec-list>
+                                                <ul class=list-h>
+                                                    <li><img src="../img/details/a7638428eb19d94f382a4b2bd80c356477dd7f01.jpg"> </li>
+                                                    <li><img src="../img/img02.jpg"> </li>
+                                                    <li><img src="../img/img03.jpg"> </li>
+                                                    <li><img src="../img/img04.jpg"> </li>
+                                                    <li><img src="../img/img01.jpg"> </li>
+                                                    <li><img src="../img/img02.jpg"> </li>
+                                                    <li><img src="../img/img03.jpg"> </li>
+                                                    <li><img src="../img/img04.jpg"> </li>
+                                                    <li><img src="../img/img01.jpg"> </li>
+                                                    <li><img src="../img/img02.jpg"> </li>
+                                                    <li><img src="../img/img03.jpg"> </li>
+                                                    <li><img src="../img/img04.jpg"> </li>
+                                                </ul>
+                                            </div>
+                                            <div class=control id=spec-right>
+                                                <img src="../img/right.gif" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <SCRIPT type=text/javascript>
+                                        $(function(){			
+                                           $(".jqzoom").jqueryzoom({
+                                                xzoom:400,
+                                                yzoom:400,
+                                                offset:30,
+                                                position:"right",
+                                                preload:1,
+                                                lens:1
+                                            });
+                                            $("#spec-list").jdMarquee({
+                                                deriction:"left",
+                                                width:350,
+                                                height:56,
+                                                step:2,
+                                                speed:4,
+                                                delay:10,
+                                                control:true,
+                                                _front:"#spec-right",
+                                                _back:"#spec-left"
+                                            });
+                                            $("#spec-list img").bind("mouseover",function(){
+                                                var src=$(this).attr("src");
+                                                $("#spec-n1 img").eq(0).attr({
+                                                    src:src.replace("\/n5\/","\/n1\/"),
+                                                    jqimg:src.replace("\/n5\/","\/n0\/")
+                                                });
+                                                $(this).css({
+                                                    "border":"2px solid #ff6600",
+                                                    "padding":"1px"
+                                                });
+                                            }).bind("mouseout",function(){
+                                                $(this).css({
+                                                    "border":"1px solid #ccc",
+                                                    "padding":"2px"
+                                                });
+                                            });				
+                                        })
+                                        </SCRIPT>
+                                    
+                                    <SCRIPT src="../js/lib.js" type=text/javascript></SCRIPT>
+                                    <SCRIPT src="../js/zzsc.js" type=text/javascript></SCRIPT>  
+                            </div> -->
+                                    
                     </div>
+                   
+                    
 
                     
 

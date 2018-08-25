@@ -1,0 +1,224 @@
+.container {
+  width: 986px;
+}
+
+.carps {
+  width: 100%;
+  height: 95px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.carps .car_nav {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.carps .car_nav .car_hhl {
+  margin: 28px 0px;
+  width: 181px;
+  height: 45px;
+}
+
+.carps .car_nav .car_tjsxl {
+  width: 472px;
+  height: 45px;
+  margin: 28px 0px;
+  margin-left: 50px;
+  background: url("../img/car/cartstep.png") no-repeat;
+}
+
+.carps .car_nav .car_tjsxr {
+  width: 235;
+  height: 50px;
+  margin-top: 28px;
+}
+
+.carps .car_nav .car_tjsxr ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carps .car_nav .car_tjsxr ul li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background: url("../img/car/f1.png") no-repeat;
+}
+
+.carps .car_nav .car_tjsxr ul li:nth-child(2) {
+  background: url("../img/car/f2.png") no-repeat;
+}
+
+.carps .car_nav .car_tjsxr ul li:nth-child(3) {
+  background: url("../img/car/f3.png") no-repeat;
+}
+
+.car_conts {
+  background-color: #eee;
+  width: 100%;
+  height: 1000px;
+}
+
+.car_conts .car_hot {
+  width: 100%;
+  height: 38px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: url("../img/car/home-bt.png") no-repeat;
+}
+
+.car_conts .car_listbox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.car_conts .car_listbox .car_listhead {
+  height: 38px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #555;
+}
+
+.car_conts .car_listbox .car_listhead .car_xx {
+  margin-right: 98px;
+}
+
+.car_conts .car_listbox .car_listhead .car_headbt {
+  padding: 0px 30px;
+  line-height: 38px;
+}
+
+.car_conts .car_listbox .car_listhead .car_allbox {
+  width: 212px;
+  line-height: 38px;
+}
+
+.car_conts .car_listbox .car_listhead .car_allbox .car_all {
+  width: 16px;
+  height: 16px;
+}
+
+.car_conts .car_listbox .car_listhead .car_listname {
+  width: 328px;
+  height: 38px;
+  padding-left: 50px;
+  text-align: left;
+  line-height: 38px;
+}
+
+.car_conts .car_listbox .car_list {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.car_conts .car_listbox .car_list li {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.car_conts .car_listbox .car_list li .car_img {
+  width: 212px;
+  text-align: center;
+  position: relative;
+}
+
+.car_conts .car_listbox .car_list li .car_img .cars {
+  position: absolute;
+  top: 10px;
+  left: 47px;
+  width: 16px;
+  height: 16px;
+}
+
+.car_conts .car_listbox .car_list li .car_img .cartp {
+  width: 136px;
+  height: 136px;
+  text-align: center;
+}
+
+.car_conts .car_listbox .car_list li .car_xzxx {
+  margin-left: 40px;
+  width: 378px;
+  height: 110px;
+  padding-top: 25px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.car_conts .car_listbox .car_list li .car_xzxx a {
+  color: #333;
+}
+
+.car_conts .car_listbox .car_list li .car_xzxx .goossize {
+  color: #ccc;
+  padding-top: 6px;
+}
+
+.car_conts .car_listbox .car_list li .car_sl {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.car_conts .car_listbox .car_list li .car_sl .car_headbt {
+  width: 88px;
+}
+
+.car_conts .car_listbox .car_list li .car_sl .jsbox {
+  border: 1px solid #ece;
+  display: block;
+  display: inline-block;
+}
+
+.car_conts .car_listbox .car_list li .car_sl .jsbox .adds, .car_conts .car_listbox .car_list li .car_sl .jsbox .jian, .car_conts .car_listbox .car_list li .car_sl .jsbox p {
+  display: block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #ece;
+}
+
+.car_conts .car_listbox .car_list li .car_sl .jsbox .zhi {
+  text-align: center;
+  width: 20px;
+  height: 18px;
+  display: block;
+}
+
+.car_conts .car_pay {
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  line-height: 42px;
+  background-color: #fff;
+}
+
+.car_conts .car_pay .car_payl, .car_conts .car_pay .car_payr {
+  height: 42px;
+  line-height: 42px;
+}
+
+.car_conts .car_pay .car_payl span, .car_conts .car_pay .car_payr span {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.car_conts .car_pay .car_payl span a, .car_conts .car_pay .car_payr span a {
+  display: inline-block;
+  text-align: center;
+}
+
+.car_conts .car_pay .car_payl .jzbtn, .car_conts .car_pay .car_payr .jzbtn {
+  width: 120px;
+  height: 42px;
+  color: #fff;
+  letter-spacing: 4px;
+  background-color: #db50a6;
+}
