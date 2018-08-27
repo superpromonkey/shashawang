@@ -60,7 +60,12 @@
 .car_conts {
   background-color: #eee;
   width: 100%;
-  height: 1000px;
+  overflow: hidden;
+}
+
+.car_conts .container {
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .car_conts .car_hot {

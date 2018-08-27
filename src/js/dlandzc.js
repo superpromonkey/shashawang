@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         }else if(_code!=codenum.innerHTML){
             code.nextElementSibling.innerText ='验证码有误！！！';
             code.focus();
+            console.log(codenum.innerHTML)
            return ;
         }
 
@@ -110,15 +111,10 @@ document.addEventListener('DOMContentLoaded',()=>{
                     isok = true;
 
                     // 成功：添加has-success类
-                    formGroup.classList.remove('has-error');
-                    formGroup.classList.add('has-success');
                     username.nextElementSibling.innerText = '';
                 }else if(xhr.responseText === 'no'){
                     isok = false;
-                    formGroup.classList.remove('has-success');
-                    formGroup.classList.add('has-error');
                     username.nextElementSibling.innerText = '用户名已存在';
-                    // username.value = "";
                     username.focus();
                    
                
@@ -126,7 +122,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             }
         }
         xhr.open('get','../api/check_username.php?username='+_username,true);
-        xhr.send();
+       xhr.send();
 
 
     }

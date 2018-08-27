@@ -8,116 +8,136 @@
     <link rel="stylesheet" href="../css/dlandzc.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/page.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../lib/jquery-3.2.1.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/yzm.js"></script>
     <script src="../js/common.js"></script>
-    <script src="../js/banner.js"></script>
+    <script src="../js/denglu.js"></script>
+
 </head>
 <body>
-        <!-- head头部 -->
-        <div class="indexbox">
-            <div class="head_top">
-                <div class="container">
-                    <ul class="head_tl fl" >
-                        <li>欢迎光临莎莎网！</li>
-                        <li>
-                            <a href="#">登录</a>或<a href="zhuce .html">免费注册</a>
-                        </li>
-                    </ul> 
-                    <ul class="head_tr fr" >
-                        <li class="idxnavt"><a href="#">
-                            <i></i>
-                            我的账户
-                            <i></i>
-                             </a>
-                             <dl class="myzh">
-                                 <dd><a href="#">我的订单</a></dd>
-                                 <dd><a href="#">我的积分</a></dd>
-                                 <dd><a href="#">我的优惠券</a></dd>
-                                 <dd><a href="#">我的收藏</a></dd>
-                                 <dd><a href="#">我的评价</a></dd>    
-                             </dl>
-                        </li>
-                        <li class="mycar"><a href="#">
-                            <i></i>
-                            我的购物车
-                            <dl class="mycarlist"></dl>
-                        </a></li>
-                        <li><a href="#">
-                            <i></i>
-                            我的收藏
-                        </a></li>
-                        <li><a href="#">我的站内信息</a></li>
-                        <li><a href="#">积分中心</a></li>
-                        <li><a href="#">Global site</a></li>
-                        <li>
-                            <div class="head_last">
-                                <a href="#">关注我们</a>
-                                <a href="https://weibo.com/sasahongkong?is_hot=1" class="wb ewmf">
-                                    <img src="../img/index/head/xl.png" alt="">
-                                    <i class="wber"></i>
-                                </a>
-                                <a href="https://wx.qq.com/" class="wx ewmf">
-                                    <img src="../img/index/head/wx.png" alt="">
-                                    <i class="wxer "></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>  
+    <!-- head头部 -->
+    <div class="indexbox">
+        <div class="head_top">
+            <div class="container">
+                <ul class="head_tl fl" >
+                    <li>欢迎光临莎莎网！</li>
+                    <li>
+                        <a href="#">登录</a>或<a href="zhuce .html">免费注册</a>
+                    </li>
+                </ul> 
+                <ul class="head_tr fr" >
+                    <li class="idxnavt"><a href="#">
+                        <i></i>
+                        我的账户
+                        <i></i>
+                            </a>
+                            <dl class="myzh">
+                                <dd><a href="#">我的订单</a></dd>
+                                <dd><a href="#">我的积分</a></dd>
+                                <dd><a href="#">我的优惠券</a></dd>
+                                <dd><a href="#">我的收藏</a></dd>
+                                <dd><a href="#">我的评价</a></dd>    
+                            </dl>
+                    </li>
+                    <li class="mycar"><a href="#">
+                        <i></i>
+                        我的购物车
+                        <dl class="mycarlist"></dl>
+                    </a></li>
+                    <li><a href="#">
+                        <i></i>
+                        我的收藏
+                    </a></li>
+                    <li><a href="#">我的站内信息</a></li>
+                    <li><a href="#">积分中心</a></li>
+                    <li><a href="#">Global site</a></li>
+                    <li>
+                        <div class="head_last">
+                            <a href="#">关注我们</a>
+                            <a href="https://weibo.com/sasahongkong?is_hot=1" class="wb ewmf">
+                                <img src="../img/index/head/xl.png" alt="">
+                                <i class="wber"></i>
+                            </a>
+                            <a href="https://wx.qq.com/" class="wx ewmf">
+                                <img src="../img/index/head/wx.png" alt="">
+                                <i class="wxer "></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+        <!-- 搜索部分 -->
+        <div class="page-rs">
+            <div class="container">
+                <!-- logo -->
+                <div class="sotelogo-rs clearfix">    
+                    <a href="../index.html" targer="_blank">
+                        <img src="../img/index/head/logo.png" alt="莎莎网" >
+                    </a>
                 </div>
             </div>
-            <!-- 搜索部分 -->
-            <div class="page-rs">
-                <div class="container">
-                    <!-- logo -->
-                    <div class="sotelogo-rs clearfix">    
-                        <a href="#" targer="_blank">
-                            <img src="../img/index/head/logo.png" alt="莎莎网" >
-                        </a>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-             <!-- 注册部分 -->
-             <div class="zhuce">
-                    <div class="container">
-                        <div class="zcnr">
-                           <!-- 注册表 -->
-                            <div class="zcnr_r fr">
-                                <div class="sign-title clearfix">
-                                    <h3 class="zcbt fl">用户登录</h3>
-                                    <p class="tzdl fr">
-                                        已有莎莎网账号？
-                                        <a href="Login.html">立即登录</a>
-                                    </p>
-                                </div>
-                                <!-- 信息填写 -->
-                                <div class="form">  
-                                    <div class="form-group">
-                                        <label for="username"></label>
-                                        <input type="username" id="username" name="username" class="form-control"
-                                        placeholder="邮箱/手机">
-                                        <span class="help-block"></span>
-                                       
-                                    </div>
-                                    <div class="form-group">
-                                            <label for="password"></label>
-                                            <input type="password" id="password" name="password" class="form-control"
-                                            placeholder="填写密码">
-                                         
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-success btnReg">登录</button>
-                                    </div>
-                                </div>
+            <!-- 注册部分 -->
+            <div class="zhuce">
+                <div class="container">
+                    <div class="zcnr">
+                        <!-- 注册表 -->
+                        <div class="zcnr_r fr">
+                            <div class="sign-title clearfix">
+                                <h3 class="zcbt fl">登录账号</h3>
+                                <p class="tzdl fr">
+                                    已有莎莎网账号？
+                                    <a href="Login.html">立即登录</a>
+                                </p>
                             </div>
-                            <div class="zcnr_l fr">
-                                <img src="../img/dlandzc/dl.png" alt="">
+                            <!-- 信息填写 -->
+                            <div class="bdtx form">
+                                <div class="form-group ">
+                                    <label for="username"></label>
+                                    <input type="email" id="username" name="username" 
+                                    class="form-control input-ls srts  glyphicon-ok"
+                                    placeholder="请输入邮箱/手机号，最少5个字符">
+                                    <span class="help-block"></span>
+                                    
+                                </div>
+                                    <div class="form-group " id="gg">
+                                            <label for="password"></label>
+                                            <input type="password" id="password" name="password" 
+                                            class="form-control input-ls"
+                                            placeholder="请输入密码6-16位字母和数字的组合">
+                                            <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group col-xs-5 yzbox">
+                                            <label for="code"></label>
+                                            <input type="text" id="code" name="code" 
+                                            class="form-control input-ls"
+                                            placeholder="填写验证码">
+                                            <span class="help-block"></span>
+                                    </div>
+                                        <div class="codenum"></div>
+
+                                        <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> 记住我
+                                                  <a href="#">忘记密码</a>
+                                                </label>
+                                              </div>
+                                           
+                                <div class="form-group">
+                                    <button class="btn btn-success btnReg btn-block">注册</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="zcnr_l fr">
+                        <img src="../img/dlandzc/dl.png" alt="">
+                    </div>
                 </div>
-
+            </div>
+        </div>
 </body>
 </html>

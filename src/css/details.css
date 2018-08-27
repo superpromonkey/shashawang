@@ -64,6 +64,7 @@
 .details .goodsdetails .goodste_bot .goodste_bl {
   box-sizing: border-box;
   width: 550px;
+  height: 614px;
   float: left;
   overflow: hidden;
   border: 1px solid #555;
@@ -354,7 +355,6 @@
 }
 
 .details .xqmain .spcs .spcs_l .spcs_lb {
-  min-height: 900px;
   overflow: hidden;
 }
 

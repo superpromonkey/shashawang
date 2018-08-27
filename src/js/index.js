@@ -14,6 +14,10 @@ jQuery(function($){
  
     });
 
+    $('.hide').on('click','li',function(){
+
+    })
+   
     
 })
 

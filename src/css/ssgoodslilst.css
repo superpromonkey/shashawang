@@ -1,11 +1,23 @@
 #lsitmain {
   width: 100%;
-  background-color: #eee;
+  background: #f2f2f2;
+}
+
+#lsitmain .container {
+  width: 1090px;
 }
 
 #lsitmain .list_tp {
   width: 100%;
   height: 50px;
+}
+
+#lsitmain .list_bt {
+  overflow: hidden;
+}
+
+#lsitmain .spfxlist {
+  background-color: #f2f2f2;
 }
 
 #lsitmain .lsidebar {
@@ -102,25 +114,27 @@
   color: #828282;
 }
 
-#lsitmain .spcs_l {
-  width: 247px;
+.spfx {
   background-color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-#lsitmain .spcs_l .spcs_lt {
+.spfx .spcs_l {
   width: 100%;
   height: 50px;
+  line-height: 50px;
   position: relative;
   border-bottom: 1px solid #666;
 }
 
-#lsitmain .spcs_l .spcs_lt .lsbt {
+.spfx .spcs_l .lsbt {
   font-size: 18px;
-  line-height: 50px;
+  height: 50px;
   padding-left: 23px;
 }
 
-#lsitmain .spcs_l .spcs_lt .lsbtl {
+.spfx .spcs_l .lsbtl {
   position: absolute;
   top: 0;
   left: 0;
@@ -129,37 +143,288 @@
   background-color: #58bc58;
 }
 
-#lsitmain .spcs_l .spcs_lb {
+.spfx .spcs_lb {
   min-height: 100px;
-  overflow: hidden;
 }
 
-#lsitmain .spcs_l .spcs_lb li {
+.spfx .spcs_lb li {
+  font-size: 12px;
+  overflow: hidden;
   width: 100%;
-  height: 69px;
   border-bottom: 1px dashed #d4d4d4;
   padding: 20px 10px;
   margin-top: -1px;
 }
 
-#lsitmain .spcs_l .spcs_lb li .spcs_lbl {
-  overflow: hidden;
+.spfx .spcs_lb li .spcs_lbl {
   width: 69px;
   height: 69px;
-  margin: 0;
-  padding: 0px;
 }
 
-#lsitmain .spcs_l .spcs_lb li .spcs_lbr {
+.spfx .spcs_lb li .spcs_lbr {
   width: 167px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   color: #3e3e3e;
 }
 
-#lsitmain .spcs_l .spcs_lb li .spcs_lbr .lsnr {
+.spfx .spcs_lb li .spcs_lbr .lsnr {
   width: 150px;
   overflow: hidden;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.list_br {
+  width: 100%;
+  width: 811px;
+  overflow: hidden;
+}
+
+.list_br .list_thead {
+  width: 100%;
+  height: 41px;
+  border-bottom: 1px solid #bbb;
+  background-color: #fff;
+}
+
+.list_br .list_thead .saixuan {
+  box-sizing: border-box;
+  padding: 0 20px;
+  line-height: 40px;
+  background-color: #fff;
+}
+
+.list_br .list_thead .saixuan a {
+  color: #c69a62;
+}
+
+.list_br .list_fenlei {
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+}
+
+.list_br .list_fenlei .dl {
+  overflow: hidden;
+  width: 100%;
+}
+
+.list_br .list_fenlei .fenlei_all {
+  overflow: hidden;
+  line-height: 20px;
+  padding: 6px 0;
+  border-bottom: 1px dotted #e9e9e9;
+}
+
+.list_br .list_fenlei .fenlei_all dt {
+  float: left;
+  margin-right: 3px;
+  width: 118px;
+  text-indent: 16px;
+  color: #8d8d8d;
+  padding-top: 6px;
+}
+
+.list_br .list_fenlei .fenlei_all .pinpai {
+  float: left;
+  margin-right: 3px;
+  width: 118px;
+  text-indent: 16px;
+  color: #8d8d8d;
+  padding-top: 6px;
+}
+
+.list_br .list_fenlei .fenlei_all dd {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+}
+
+.list_br .list_fenlei .fenlei_all dd .filter-itembox {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  width: 140px;
+  padding: 5px 0 0 0;
+  line-height: 20px;
+}
+
+.list_br .list_fenlei .fenlei_all dd .filter-itembox .filter-item {
+  padding: 1px 5px 1px 8px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.list_br .list_fenlei .fenlei_all dd .filter-itembox .filter-item .fenleixx {
+  color: #333;
+  max-width: 107px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+
+.list_br .list_fenlei .fenlei_all .gengduo {
+  text-align: center;
+  width: 60px;
+  margin: -6px 10px 0 0;
+  float: right;
+  border: 1px solid #e9e9e9;
+  border-top: none;
+  padding: 10px 6px 2px 6px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #c69a62;
+}
+
+.list_br .list_fenlei .fenlei_all .duoxuan {
+  text-align: center;
+  width: 60px;
+  float: right;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.list_br .list_fenlei .fenlei_all .duoxuan a {
+  color: #b4b5b8;
+}
+
+.list_br .list_paixu {
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.list_br .list_paixu .paixu_l .paixuall {
+  height: 36px;
+  float: left;
+  background-color: #fff;
+}
+
+.list_br .list_paixu .paixu_l a {
+  display: block;
+  cursor: pointer;
+  padding: 0px 5px;
+  float: left;
+  position: relative;
+}
+
+.list_br .list_paixu .paixu_l .paixu_color {
+  color: #bf9b5f;
+}
+
+.list_br .list_paixu .paixu_l span {
+  padding-left: 25px;
+  border-right: 1px solid #f1f1f1;
+  padding-right: 25px;
+  line-height: 36px;
+  display: block;
+  float: left;
+}
+
+.goodslist_box {
+  width: 100%;
+  height: 482px;
+  margin-top: 20px;
+}
+
+.goodslist_box li {
+  width: 253px;
+  height: 485px;
+  float: left;
+  margin: 0 26px 25px 0;
+  background-color: #fff;
+}
+
+.goodslist_box li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.goodslist_box li .goods_bt {
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  padding: 0px 15px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  margin-left: 50px;
+  background-color: #bd1f88;
+}
+
+.goodslist_box img {
+  position: relative;
+  width: 253px;
+  height: 253px;
+  display: block;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.goodslist_box .sale-price {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding: 10px 15px;
+  color: #858587;
+}
+
+.goodslist_box .sale-price .count {
+  color: #c69a62;
+  margin-top: 2px;
+}
+
+.goodslist_box .sale-price .price {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ec3e7d;
+}
+
+.goodslist_box .arrivals-info {
+  padding: 12px 15px;
+  overflow: hidden;
+}
+
+.goodslist_box .arrivals-info .infoconts {
+  height: 82px;
+  overflow: hidden;
+}
+
+.goodslist_box .arrivals-info .infoconts .des02 {
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  line-height: 20px;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.goodslist_box .arrivals-info .infoconts .des03 {
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 13px;
+  height: 40px;
+  color: #404040;
+}
+
+.goodslist_box .arrivals-info .infoconts .des04 {
+  color: #404040;
+}
+
+.goodslist_box .arrivals-info .infoconts .salenum {
+  font-size: 12px;
+  color: #B9B9B9;
+  padding-top: 5px;
+}
+
+.btn_pages .yemaxiabiao {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
 }

@@ -1,12 +1,6 @@
 <?php
-    // 引入connect.php
-    include 'connect.php';
+   $result = query_oop($sql);
 
-    /*
-        接口功能：验证用户名是否存在
-        所需参数：
-            * username
-     */
     
     
     $username = isset($_POST['username']) ? $_POST['username'] : null; 

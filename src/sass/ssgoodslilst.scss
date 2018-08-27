@@ -1,20 +1,27 @@
 #lsitmain{
     width: 100%;
-    background-color: #eee;
-    // height: 1000px;
+    background: #f2f2f2;
+        .container{
+            width: 1090px;
+        }
     .list_tp{
         width: 100%;
         height: 50px;
     }
 
+    .list_bt{
+        overflow: hidden;
+    }
+    .spfxlist{
+        background-color: #f2f2f2;
+    }
     // 商品列表导航
-
-    .lsidebar {
+    .lsidebar{
         float: left;
         width: 253px;
         overflow: hidden;
     }
-    .refilter {
+    .refilter{
         margin-bottom: 30px;
     }
     .refilter .cpfl-bt {
@@ -69,6 +76,7 @@
             overflow: hidden;
             }
     }
+    // 二级菜单
     .l_btwo {
         background: #fff;
         padding: 10px 0px 15px 0;
@@ -91,23 +99,27 @@
             }
         }
     }
+  
+    
+}
+// 历史浏览纪录
 
-    // 历史浏览纪录
-
-    .spcs_l{
-        width: 247px;background-color: #fff;
-        .spcs_lt{
+    .spfx{ 
+        background-color: #fff;
+        width: 100%;
+        margin-bottom: 20px;
+        .spcs_l{
            
             width: 100%;
             height: 50px;
+            line-height: 50px;
             position: relative;
             border-bottom: 1px solid #666;
             .lsbt{
                 font-size: 18px;
-                line-height: 50px;
+                height: 50px;
                 padding-left: 23px;
                 
-           
             }
             .lsbtl{
                 position: absolute;
@@ -122,22 +134,23 @@
         }
         .spcs_lb{
             min-height: 100px;
-            overflow: hidden;
+           
             li{
+                font-size: 12px;
+                overflow: hidden;
                 width: 100%;
-                height: 69px;
                 border-bottom: 1px dashed #d4d4d4;
                 padding: 20px 10px;
-                margin-top: -1px;
+                margin-top: -1px; 
                 .spcs_lbl{
-                    overflow: hidden;
+                    // overflow: hidden;
                     width: 69px;
                     height: 69px;
-                    margin: 0;
-                    padding: 0px;
                 }
                 .spcs_lbr{
                     width: 167px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                     overflow: hidden;
                     color: #3e3e3e;
                     .lsnr{
@@ -146,12 +159,260 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
-                       
+                    
                     }
+                   
                 }
+    
+            }
+            
+        }
+    }  
+    
+ 
+       
+
+    // 商品分类
+
+    .list_br{
+        width: 100%;
+        width: 811px;
+        overflow: hidden;
+       
+        .list_thead{
+            width: 100%;
+            height: 41px;
+            border-bottom: 1px solid #bbb;
+            background-color: #fff;
+            
+           .saixuan{
+               box-sizing: border-box;
+               padding: 0 20px;
+               line-height: 40px;
+               background-color: #fff;
+               a{
+                color: #c69a62;
+                }
+           } 
+        }
+        // 分类
+        .list_fenlei{
+            overflow: hidden;
+            background-color: #fff;
+              width: 100%;
+              .dl{overflow: hidden;width: 100%;}
+              .fenlei_all{
+                overflow: hidden;
+                line-height: 20px;
+                padding: 6px 0;
+                border-bottom: 1px dotted #e9e9e9;
+                
+                dt{
+                    float: left;
+                    margin-right: 3px;
+                    width: 118px;
+                    text-indent: 16px;
+                    color: #8d8d8d;
+                    padding-top: 6px;
+                }
+                .pinpai{
+                    float: left;
+                    margin-right: 3px;
+                    width: 118px;
+                    text-indent: 16px;
+                    color: #8d8d8d;
+                    padding-top: 6px;
+                }
+                    dd{
+                        width: 70%;
+                        float: left;
+                        overflow: hidden;
+                        .filter-itembox{
+                            display: block;
+                            float: left;
+                            white-space: nowrap;
+                            width: 140px;
+                            padding: 5px 0 0 0;
+                            line-height: 20px;
+                            .filter-item{
+                                padding: 1px 5px 1px 8px;
+                                display: inline-block;
+                                overflow: hidden;
+                                .fenleixx{
+                                    color: #333;
+                                    max-width: 107px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    float: left;
+                                }
+                            }
+                        }
+                    }
+                    .gengduo{
+                        text-align: center;
+                        width: 60px;
+                        margin: -6px 10px 0 0;
+                        float: right;
+                        border: 1px solid #e9e9e9;
+                        border-top: none;
+                        padding: 10px 6px 2px 6px;
+                        border-bottom-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        color: #c69a62;
+                    }
+                        .duoxuan{
+                            text-align: center;
+                            width: 60px;
+                            float: right;
+                            padding-top: 5px;
+                            margin-right: 10px;
+                            a{color: #b4b5b8;}
+                        }
+                   
+                
+              }  
 
             }
+        //   排序
+        .list_paixu{ 
+            width: 100%;
+            height: 36px;
+            margin-top: 20px ;
+            overflow: hidden;
+            background-color: #fff;
+            .paixu_l{
+                .paixuall{
+                    height: 36px;
+                    float: left;
+                    background-color: #fff;
+                }
+                
+                a{
+                    display: block;
+                    cursor: pointer; 
+                    padding: 0px 5px;
+                    float: left;
+                    position: relative;
+                }
+                .paixu_color{color: #bf9b5f;}
+                span{
+                    padding-left: 25px;
+                    border-right: 1px solid #f1f1f1;
+                    padding-right: 25px;
+                    line-height: 36px;
+                    display: block;
+                    float: left;
+                }
+            }
+           
+
         }
+        
     }
+
+     // 商品列表
+    .goodslist_box{
+       width: 100%;
+        height: 482px;
+        margin-top: 20px;
+        
+        li{
+            width: 253px;
+            height: 485px;
+            float: left;
+            margin: 0 26px 25px 0;
+            background-color: #fff;
+            &:nth-child(3n){
+                margin-right: 0px;
+            }
+            .goods_bt{
+                height: 30px;
+              text-align: center;
+               color: #fff;
+               padding: 0px 15px;
+               letter-spacing:4px;
+               border-radius: 5px;
+               margin-left: 50px;
+               background-color: rgb(189, 31, 136);
+           }
+        }
+
+        img{
+            position: relative;
+            width: 253px;
+            height: 253px;
+            display: block;
+            background-color: #ccc;
+            overflow: hidden;
+
+        }
+        .sale-price {
+          
+            border-bottom: 1px solid #eee;
+            border-top: 1px solid #eee;
+            padding: 10px 15px;
+            color: #858587;
+           .count {
+                color: #c69a62;
+                margin-top: 2px;
+            }
+           .price {
+                font-size: 24px;
+                margin-right: 10px;
+                color: #ec3e7d;
+            }
+        }
+
+        .arrivals-info {
+            padding: 12px 15px;
+            overflow: hidden;
+            .infoconts {
+                height: 82px;
+                overflow: hidden;
+                .des02 {
+                    height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    padding: 0;
+                    line-height: 20px;
+                    font-size: 13px;
+                    text-overflow: ellipsis;
+                    font-weight: bold;
+                }
+                .des03 {
+                    overflow: hidden;
+                    line-height: 20px;
+                    font-size: 13px;
+                    height: 40px;
+                    color: #404040;
+                } 
+                .des04 {
+                    color: #404040;
+                }
+                .salenum {
+                    font-size: 12px;
+                    color: #B9B9B9;
+                    padding-top: 5px;
+                }
+            }
+       
+
+
+        }
+       
+
+    }
+
+   .btn_pages {
+            .yemaxiabiao{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+   }
     
-}
+
+        
+       
