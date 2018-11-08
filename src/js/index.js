@@ -1,23 +1,30 @@
    
 jQuery(function($){
-    let idxnavt = $('.idxnavt');
-    let myzh = $('.myzh');
 
-    idxnavt.mouseover(()=>{
-        $('.myzh').css('display','block');
-        // myzh.stop(true,true).slideDown(1000);
-        // $('.dd').stop(true,true).slideDown(1000);
+     var listitem = $('.ahover');
+
+
+    // 我的账户动画
+   $('.idxnavt').mouseover(()=>{
+    
+        $('.myzh').stop(false,false).slideDown(800);
     });
-    idxnavt.mouseout(function(){
-        $('.myzh').css('display','none');
-        // myzh.stop(true,true).slideUp("slow");
+    $('.idxnavt').mouseout(function(){
+        $('.myzh').stop(false,false).slideUp("slow");
  
     });
+ 
+  
+    // 商品列表导航
+         $(".ahover").click(function(){
+            $(this).children("ul").toggle('addblock');
+          })
 
-    $('.hide').on('click','li',function(){
-
-    })
    
-    
+
+           
+
+
+   
 })
 

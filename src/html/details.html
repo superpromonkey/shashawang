@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../icon/hzp/iconfont.css">
     <link rel="stylesheet" href="../icon/myitmezt/iconfont.css">
     <script src="../lib/jquery-3.2.1.js"></script>
+    <script src="../js/addcar.js"></script>
     <script src="../js/details.js"></script>
     <script src="../js/djstime.js"></script>
 </head>
@@ -494,7 +495,7 @@
     <div class="details">
         <div class="container">
             <!-- 导航路径 -->
-            <div class="homeurl">
+            <div class="homeurl fl">
                 <a href="#"><span>首页</span></a><span>/</span>
                 <a href="#"><span>面部护肤</span></a><span>/</span>
                 <a href="#"><span>面霜</span></a><span>/</span>
@@ -514,16 +515,16 @@
                 <div class="goodste_bot">
                     <!-- 商品放大镜 -->
                     <div class="goodste_bl" id="myzooz">
-                            <div align="center" class="zoozcj">  
-                                    <div id=preview>
-                                        <div class=jqzoom id=spec-n1"><IMG height=350
+                           <!--  <div align="center" class="zoozcj">  
+                                    <div id="preview">
+                                        <div class="jqzoom id=spec-n1"><IMG height=350
                                         src="../img/zoozpt/g4.jpg" jqimg="../img/zoozpt/g4.jpg" width=350>
                                         </div>
-                                        <div id=spec-n5>
-                                            <div class=control id=spec-left>
+                                        <div id="spec-n5">
+                                            <div class=c"ontrol id=spec-left">
                                                 <img src="../img/zoozpt/left.gif" />
                                             </div>
-                                            <div id=spec-list>
+                                            <div id="spec-list">
                                                 <ul class=list-h>
                                                     <li><img src="../img/zoozpt/g3.jpg"> </li>
                                                     <li><img src="../img/zoozpt/g4.jpg"> </li>
@@ -535,7 +536,7 @@
                                                     <li><img src="../img/zoozpt/g6.jpg"> </li>
                                                 </ul>
                                             </div>
-                                            <div class=control id=spec-right>
+                                            <div class=control id="spec-right">
                                                 <img src="../img//zoozpt/right.gif" />
                                             </div>
                                         </div>
@@ -577,7 +578,7 @@
                                     
                                     <SCRIPT src="../js/lib.js" type=text/javascript></SCRIPT>
                                     <SCRIPT src="../js/zzsc.js" type=text/javascript></SCRIPT>  
-                            </div>
+                            </div> -->
                                     
                     </div>
                    
@@ -586,9 +587,11 @@
                     
                     <!-- 商品详情信息 -->
                     <div class="goodste_br">
-                        <p>
-                            <i class="syh">“</i>活泉柔肤水能夠幫助舒緩和潤澤已清潔了的肌膚，
-                            保持肌膚柔軟舒適之餘亦打好基礎，幫助吸收其他護膚品的養分。
+                    
+                    <div class="xqcont">
+
+                         <p>
+                            <i class="syh">“</i>${res.goodsname2}${res.goodsname}
                         </p>
                         <div class="goodste_brc">
                             <p class="product-titles2">
@@ -596,9 +599,9 @@
                                 <i class="icon66">零扣关</i>
                                 <i class="icon66">包税</i>
                                 <a href="#" target="_blank">
-                                碧欧泉&nbsp;</a>
+                                ${res.brand}&nbsp;</a>
                             </p>
-                            <p>活泉柔肤水  (400毫升)</p>
+                            <p>活泉柔肤水  (${res.size}毫升)</p>
                             <div class="ruleWrap">
                                 <ul class="dispatching" id="J-dispatching">
                                     <li><div class="one">配送</div><div class="two">保税仓发货，直送时间为2-5个工作天</div></li>
@@ -615,7 +618,7 @@
                                             
                                         </div>
                                     </li>
-                                    <li><div class="one">服务</div><div class="two service"><span class="icon67">30日退换保证</span><span class="icon67">正品保障</span><span class="icon67">价格承诺</span></div></li>	
+                                    <li><div class="one">服务</div><div class="two service"><span class="icon67">30日退换保证</span><span class="icon67">正品保障</span><span class="icon67">价格承诺</span></div></li>    
                                 </ul>
                             </div>
                         </div>
@@ -623,23 +626,26 @@
                             <div class="spshuliang">
                                     <b> 数量:</b>
                                
-                                    <button  class="spbtn">+</button>
-                                    <input type="text" id="jssl" class="shuliangsy spbtn " value="">
-                                    <button class="spbtn">-</button >
+                                    <div class = "addsbox" style ="display:inline-block">
+                                        <button  class="addgoods spbtn">+</button>
+                                        <input type="text" id="jssl" class="shuliangsy spbtn " value="1">
+                                        <button class="jgoods spbtn">-</button >
+                                        <span class="totalts"</span>
+                                    </div>
                                
                             </div>
 
                             <span class="detail">
-                                特卖价<b class="price"><ins class="action-price">￥169.0</ins></b>
+                                特卖价<b class="price"><ins class="action-price">￥${res.newprice}</ins></b>
                                     <span class="old-price">
                                     <del>市场价</del>
-                                    <i class="grey"><del class="action-mktprice">￥390.0</del></i>
+                                    <i class="grey"><del class="action-mktprice">￥${res.price}</del></i>
                                 </span>
                             </span>
 
                            
                             <div class="xgbtbox">
-                                <button class="dhtzbyn ">到货通知</button>
+                                <button class="addcar dhtzbyn">加入购物车</button>
                                 <div class="dhtzbyn smgw">扫扫即加入购物车 
                                     <div class="smgw"></div>
                                 </div>
@@ -665,8 +671,9 @@
                             </div>
 
                         </div>
+
                     </div>
-                    
+                </div>
                 </div>  
             </div>
 
@@ -1035,3 +1042,5 @@
     </div>
 </body>
 </html>
+
+

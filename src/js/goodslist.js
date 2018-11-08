@@ -55,9 +55,11 @@ jQuery(function($){
                            <p class="salenum">已售0件</p>
                        </div>
                    </a>
-                   <button class="goods_bt"> 加入购物车 </button>     
+                   <div class = "goodspt"></div>
+                   <div class = "goodsbtn">dsfsdkljflk</div>
                </li>`;
         });
+                   // <button class="goods_bt"> 加入购物车 </button>     
 
         $('.arrivalslist').html(res1);     
 
@@ -99,22 +101,54 @@ jQuery(function($){
                  })      
            
            })
+                 
+                 
 
-
-     
-        //    $('.arrivalslist').on('click','li',function(){
-        //     let gsid = $(this).attr('data-id');
-        //     console.log(gsid*1);
-        //    $.get('../api/orderlist.php',{gsid},res=>{
-        //         let res2data = JSON.parse(res).data2;
+            
+            // 把点击的商品得到的id传到详情页
+            // 
+           $('.arrivalslist').on('click','li',function(){
+              // let gsid = $(this).attr('data-id');
                 
-
-
-        //          })      
+                 window.location.href = 'details.html?id='+gsid;
+      
            
-        //    })
+           })
 
-                  
+
+
+           // 商品动画
+      
+          $('.arrivalslist').on('mouseover','li',function(){
+               
+              var idx=($('.arrivalslist li').index(this))*1+1
+                console.log(idx)
+                if(idx%3==0){
+                    $(this).children(".goodspt").stop().animate({width:'100px'},"1000");
+                  $(this).children(".goodsbtn").stop().animate({height:'100px',width:"353px"},"3000");  
+                  $(this).children(".goodspt").show();
+                  $(this).children(".goodsbtn").show();
+                }else{
+
+                  $(this).children(".goodspt").stop().animate({width:'100px'},"1000");
+                  $(this).children(".goodsbtn").stop().animate({height:'100px',width:"353px"},"3000");  
+                  $(this).children(".goodspt").show();
+                  $(this).children(".goodsbtn").show();
+                  // console.log(gsid,'222');
+                }
+               
+              });
+
+            $('.arrivalslist').on('mouseout','li',function(){
+              
+                 $(this).children(".goodspt").stop().animate({width:'0px'});
+                  $(this).children(".goodsbtn").stop().animate({height:'0px',width:"253px"},"3000");
+                  $(this).children(".goodspt").hide();
+                  $(this).children(".goodsbtn").hide();
+              });
+             
+
+            
     
     })
           

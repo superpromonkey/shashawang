@@ -13,7 +13,7 @@
 	$username = isset($_POST['username']) ? $_POST['username'] : null; 
 	$password = isset($_POST['password']) ? $_POST['password'] : null; 
 
-	
+
 
 	// 写入注册用户名和密码
 	$sql = "insert into wxdata(username,password) values('$username','$password')";

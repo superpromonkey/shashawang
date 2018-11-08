@@ -204,7 +204,7 @@
 
 .details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox .dhtzbyn {
   float: left;
-  width: 146px;
+  width: 154px;
   height: 40px;
   line-height: 38px;
   color: #fff;
@@ -212,16 +212,17 @@
   letter-spacing: 4px;
   background: #ec3e7d;
   border-radius: 5px;
+  border: 1px solid #ec3e7d;
 }
 
 .details .goodsdetails .goodste_bot .goodste_br .goodste_brt .xgbtbox .smgw {
-  box-sizing: border-box;
   font-size: 12px;
+  width: 154px;
   background-color: #fff;
   color: #666;
   border: 1px solid #111;
   text-align: center;
-  padding: 0px;
+  padding: 0px 10px;
   margin-left: 10px;
   position: relative;
 }

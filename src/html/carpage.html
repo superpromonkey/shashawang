@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="utf-8"> -->
+
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+     
+    </head>
+    <body>
+
+    <div class="output"></div>
+
+        
+      <script type="text/javascript">
+
+      document.addEventListener('DOMContentLoaded',function(){
+           var output = document.querySelector('.output');
+
+          // 创建请求对象,返回一个异步请求对象
+            var xhr = new XMLHttpRequest();
+
+            // 处理服务器返回数据
+          window.onload = function(){
+              xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4) {
+
+                    var res = xhr.responseText;
+
+                    // var ret = res[0][goodsname];
+                    output.innerHTML = res;
+                     totaljs(res)
+                }
+            }
+        
+             // 设置请求参数，建立与服务器连接
+            xhr.open("get", "../api/shoppingcar.php", true);
+
+            // 向服务器发送请求
+            xhr.send();
+            }
+
+
+            function totaljs(res){
+                       cargoods+=  `<li>
+                            <div class="car_img fl">
+                                <input type="checkbox" name="all" id="" class="cars">
+                                <img src="../img/car/g1.jpg" alt="" class="cartp">
+                            </div> 
+                            <div class="car_xzxx fl">
+                                <p>
+                                    <a href="#">BURBERRY 伦敦男士 倫敦男用淡香水噴霧 </a>         
+                                </p>
+                                <p class="goossize">100毫升</p>
+                            </div>
+
+                            <div class="car_sl fl">
+                                    <div class="car_headbt fl">￥360</div>
+                                    <div class="car_headbt fl ">
+                                        <div class="jsbox">
+                                            <a href="#" class="adds fl">+</a>
+                                            <input type="text" class="zhi fl" value="1">
+                                            <a href="#" class="jian fl">-</a>
+                                        </div>  
+                                    
+                                    </div>
+                                    <div class="car_headbt fl">
+                                        <p>￥360</p>
+                                        <p>商城包税</p>
+                                    </div>
+                                    <div class="car_headbt fl"><a href="#">删除</a></div>
+                                            
+                                       
+                            </div>
+                        </li> `
+            }
+
+
+
+
+      })
+
+
+      </script>
+
+    </body>
+</html>

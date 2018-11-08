@@ -1,3 +1,4 @@
+.addblock{display:block;}
 #lsitmain{
     width: 100%;
     background: #f2f2f2;
@@ -319,23 +320,65 @@
         
         li{
             width: 253px;
-            height: 485px;
+            height: 430px;
             float: left;
+            position:relative;
             margin: 0 26px 25px 0;
             background-color: #fff;
-            &:nth-child(3n){
-                margin-right: 0px;
+           
+            .goodsbtn{
+                position: absolute;
+                top:430px;
+                left: 0px;
+                width: 253px;
+                height: 0px;
+                 z-index:100;
+                 display:block;
+                 // display:none;
+                background-color: #333;
             }
-            .goods_bt{
+            .goodspt{
+                position: absolute;
+                top:0px;
+                left: 253px;
+                width: 0px;
+                height: 430px;
+                z-index:100;
+                // display:none;
+                background-color: #aaa;
+            }
+             &:nth-child(3n){
+                margin-right: 0px;
+                    .goodsbtn{
+                    position: absolute;
+                    top:430px;
+                    left: 0px;
+                    width: 0px;
+                    height: 0px;
+                     .goodspt{
+                    position: absolute;
+                    top:0px;
+                    left: -100px;
+                    width: 0px;
+                    height: 430px;
+                    z-index:100;
+                    // display:none;
+                    
+                }
+                .goods_bt{
                 height: 30px;
-              text-align: center;
+                text-align: center;
                color: #fff;
                padding: 0px 15px;
                letter-spacing:4px;
                border-radius: 5px;
                margin-left: 50px;
                background-color: rgb(189, 31, 136);
-           }
+                }
+                
+               
+            }
+            
         }
 
         img{
